@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm p-1 pe-5 ps-5" >
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="{{ url_for('static', filename='img/blue_logo.png') }}" alt="" height="60" class="d-inline-block align-text-top p-1">
+            <span class="navbar-brand mb-0 h1 p-1"><b style="color: var(--text-color);">JJ Designs</b></span>
+        </a>
+        <button class="navbar-toggler collapsed btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-underline mb-2 mb-lg-0 d-flex justify-content-between" style="width: 75%;">
+                <div class="navlink-container">
+
+                    <li class="nav-item">
+                        <a class="nav-link{% if active_page == 'home' %} active{% endif %}" href="{{ url_for('home') }}" > Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link{% if active_page == 'portfolio' %} active{% endif %}" href="{{ url_for('portfolio') }}"> Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link{% if active_page == 'services' %} active{% endif %}" href="{{ url_for('services') }}"> Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link{% if active_page == 'abouts' %} active{% endif %}" href="{{ url_for('abouts') }}" > Abouts</a>
+                    </li>
+
+                </div>
+                
+                <!-- <button type="button" class="btn btn-sm p-0" style="width: 150px;">Let's talk <i class="bi bi-arrow-right"></i></button> -->
+                <a class="btn btn-sm" style="width: 150px;" href="{{ url_for('lets_talk') }}">Let's talk <i class="bi bi-arrow-right"></i></a>
+            </ul>
+        </div>
+    </div>
+</nav>

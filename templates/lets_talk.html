@@ -1,0 +1,66 @@
+{% include "head.html" %}
+
+<body style="background-color: #f3f7ff;">
+    {% include "navbar.html" %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div style="background-color: #f3f7ff;">
+
+                    <div style="margin: 50px; display: grid; place-items: center; height: fit-content;">
+
+                        <div class="contact-form card shadow-sm">
+                            
+
+                            <form action="https://api.web3forms.com/submit" method="POST">
+
+                                <h2 class="title connect_with_me"> <b class="gradient-text">Connect With Me</b></h2>
+                                <p class="text-muted text-center">Find out more about me and my graphic designing journey </p>
+
+                                <input type="hidden" name="access_key" value="5edccf17-e810-4905-9819-760270ea7bc3" />
+
+                                <div class="form__div">
+                                    <input type="text" name="full_name" class="form__input" id="full_name" placeholder=" " required>
+                                    <label for="full_name" class="form__label"><i class="bi bi-person-fill"></i>  Full Name:</label>
+                                </div>
+
+                                <div class="form__div">
+                                    <input type="email" name="email" class="form__input" id="email" placeholder=" " required>
+                                    <label for="email" class="form__label"><i class="bi bi-envelope"></i>  Email:</label>
+                                </div>
+            
+                                <div class="form__div">
+                                    <input type="number" name="Contact" class="form__input" id="Contact" placeholder=" " required maxlength="11">
+                                    <label for="Contact" class="form__label"><i class="bi bi-telephone"></i>  Contact No:</label>
+                                </div>
+    
+                                <div class="form__div">
+                                    <textarea type="text" name="message" class="form__input form_textarea" placeholder=" Message"   id="message" required></textarea>
+                                </div>
+    
+                               
+            
+                                <div class="text-center">
+                                    <button type="submit" class="btn w-100" style="margin-top: 100px;" id="registerVisitorBtn">Send Message <i class="bi bi-arrow-right"></i></button>
+                                </div>
+                            </form>
+        
+                            
+                        </div>
+                    </div>
+
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% include "footer.html" %}
+    
+</body>
+</html>

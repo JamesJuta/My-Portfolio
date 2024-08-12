@@ -1,0 +1,36 @@
+{% include "head.html" %}
+
+<body>
+    {% set active_page = 'portfolio' %}
+    {% include "navbar.html" %}
+
+    <!-- Portfolio -->
+    <div class="container">
+        <div class="row" style="padding: 20px 0; border: 1px solid red;">
+            <div class="col-12">
+                <div class="bg-white">
+
+                    <div style="margin: 50px; display: grid; place-items: center; border: 1px solid red;">
+
+                        <h2 class="title" style="text-align: center; font-size: 40px;"> <b class="gradient-text">Explore My Creative Projects</b></h2>
+                        <p class="text-muted">Software/ Programs that I use for making different kind of projects </p>
+                        
+                        <div class="pt-3 w-100 d-flex justify-content-between">
+                            <button type="button" class="btn btn-sm btn-outline-primary" style="width: 150px;">Let's talk <i class="bi bi-arrow-right"></i></button>
+                            <button type="button" class="btn btn-sm btn-primary" style="width: 150px;">Services</button>
+                            <button type="button" class="btn btn-sm btn-primary" style="width: 150px;">Services</button>
+                            <button type="button" class="btn btn-sm btn-primary" style="width: 150px;">Services</button>
+                            <button type="button" class="btn btn-sm btn-primary" style="width: 150px;">Services</button>
+                        </div>
+                       
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include "footer.html" %}
+    
+</body>
+</html>
