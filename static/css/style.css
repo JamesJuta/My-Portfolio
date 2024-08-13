@@ -381,6 +381,10 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
 }
 
+.custom_margin{
+    margin:0 50px 50px 50px;
+}
+
 
 
 
@@ -432,6 +436,50 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 
+
+
+
+
+
+.text_hover {
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      var(--text-color) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .text_hover:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .text_hover:hover {
+   background-position: 0;
+  }
+  
+  .text_hover:hover::before {
+    width:100%;
+  }
+
+
+
 /* =========================================== Responsive =========================================== */
 @media (max-width: 1200px) {
     .hero-title {
@@ -460,6 +508,9 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     .connect_with_me{
         font-size: 30px;
+    }
+    .custom_margin{
+        margin:0 15px 15px 15px;
     }
 }
 

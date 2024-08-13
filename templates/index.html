@@ -46,6 +46,13 @@
                             <a class="btn btn-sm" style="width: 150px;" href="{{ url_for('lets_talk') }}">Let's talk <i class="bi bi-arrow-right"></i></a>
                             <a class="btn btn-sm" style="width: 150px;" href="{{ url_for('services') }}">Services</a>
                         </div>
+
+                        <div class="social-icons">
+                            <a href="#" class="bi bi-facebook" aria-label="Facebook"></a>
+                            <a href="#" class="bi bi-twitter" aria-label="Twitter"></a>
+                            <a href="#" class="bi bi-linkedin" aria-label="LinkedIn"></a>
+                            <a href="#" class="bi bi-instagram" aria-label="Instagram"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -59,7 +66,7 @@
             <div class="col-12">
                 <div class="bg-white">
                     
-                    <div style="margin:0 50px 50px 50px;">
+                    <div class="custom_margin">
                         <img src="{{ url_for('static', filename='img/banner.gif') }}" class="d-block shadow-sm w-100" alt="..." style="border-radius: 10px;">
                     </div>
                     
@@ -76,7 +83,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="bg-white">
-                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between" style="margin: 0 50px 50px 50px;">
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between custom_margin">
                         <div class="p-2 mb-3 mb-md-0" style="width: 100%; max-width: 500px;">
                             <h2 class="title">My Latest Works</h2>
                             <h6>"Showcasing a Collection of My Most Recent and <br> Innovative Design Projects."</h6>
@@ -135,10 +142,10 @@
             <div class="col-12">
                 <div class="bg-white">
                     
-                    <div style="margin:0 50px 50px 50px; display: grid; place-items: center;">
+                    <div class="custom_margin" style=" display: grid; place-items: center;">
 
                         <h2 class="title" style="text-align: center;"> Program skills</b></h2>
-                        <p class="text-muted">Software/ Programs that I use for making different kind of projects </p>
+                        <p class="text-center">Software/ Programs that I use for making different kind of projects </p>
                         
                         <div class="d-block">
                             <div class="d-flex align-items-center">
@@ -174,208 +181,49 @@
     </div>
 
 
-    
-
-    <!-- Educational Background -->
-    <!-- <div class="container">
-        <div class="row" style="border: 1px solid red;">
-            <div class="col-12">
-                <div class="bg-white">
-                    
-                    <div class="d-flex align-items-center justify-content-between"
-                        style="margin: 50px; border: 1px solid red; gap: 25px;">
-
-                        <div class="p-2 col-md-6" style="border: 1px solid red;">
-                            <h2 class="title" style="text-align: center;"> Educational Background</b></h2>
-                            
-                            <div class="accordion w-100 shadow-sm" id="accordionPanelsStayOpenExample">
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                        <div class="d-flex" style="gap: 15px;">
-                                            <div class="p-2 circle-icon"> <b><i class="bi bi-book" style="color: white;"></i></b></div>
-                                            <span>
-                                                <strong>Executive Computer Education Leaders (EXCEL)</strong>
-                                                 <br> Calamba City, Laguna, October 2023 - June 2024 | 8 mos
-                                            </span>
-                                        </div>
-                                        
-                                        
-                                    </button>
-                                  </h2>
-                                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                                    <div class="accordion-body">
-                                        <p class="accordion-body-text">
-                                            <strong>Graphic Designer. </strong>Executive Computer Education Leaders (EXCEL) is an organization at City College of Calamba whose primary goal is to catalyze excellence in students by teaching computer literacy. As part of the Graphics Team in EXCEL, my role was to design social media postings, graphics and Powerpoint presentations that are used by the organization.
-                                        </p>
-                                    </div>
-                                  </div>
-                                </div>
-                                
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                        <div class="d-flex" style="gap: 15px;">
-                                            <div class="p-2 circle-icon"> <b><i class="bi bi-book" style="color: white;"></i></b></div>
-                                            <span>
-                                                <strong>Bagwis (Culion National High School) </strong>
-                                                 <br> Culion, Palawan , February 2024 - April 2024 | 3 mos
-                                            </span>
-                                        </div>
-                                    </button>
-                                  </h2>
-                                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        <p class="accordion-body-text">
-                                            <strong>Layout Artist. </strong>Designing newspaper layout and graphics for contests and competing at the Division, Regional and Nationals Schools Press Conference.
-                                        </p>
-                                    </div>
-                                  </div>
-                                </div>
-        
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                        <div class="d-flex" style="gap: 15px;">
-                                            <div class="p-2 circle-icon"> <b><i class="bi bi-book" style="color: white;"></i></b></div>
-                                            <span>
-                                                <strong>Gender and Development (GAD) </strong>
-                                                 <br> Calamba City, Laguna, July 2021 - January 2022 | 7 mos
-                                            </span>
-                                        </div>
-                                    </button>
-                                  </h2>
-                                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        <p class="accordion-body-text">
-                                            <strong>Data Encoder and Photo Editor. </strong>It is a data entry and photo editing job in the municipal Government of Calamba wherein we interview people, encode information, and edit their photos for ID
-                                        </p>
-                                    </div>
-                                  </div>
-                                </div>
-        
-                                
-        
-                                
-        
-                            </div>
-
-                        </div>
-                        
-                        <div class="p-2 col-md-6" style="border: 1px solid red;">
-                            <h2 class="title" style="text-align: center;"> Educational Background</b></h2>
-                            
-                            <div class="card mb-2">
-                                <div class="card-body d-flex shadow-sm" style="gap: 10px;">
-                                    <div class="p-2" style="width: 40px; height: 40px; background-color: blue; border-radius: 50%; display: grid; place-items: center;" > <i class="bi bi-book" style="color: white;"></i></div>
-                                    <div class="p-2" style=" border-left: 2px solid red;">
-                                        <h6 class="card-title">Bachelors of Science in Computer Science</h6>
-                                        <p>City College of Calamba</p>
-                                        <p>| College - 2020-2024</p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-
-                            <h2 class="title"> Why Hire Me?</b></h2>
-                            <p>When I am designing, I establish connections and communication with the clients and determine what are their specific goals or desired design for the project, I plan, research, and brainstorm for information and add it to my concept then sketch up the ideas and turn them into an interesting creative visual design. I make sure that my design is compelling enough by getting feedback from teammates and others and I polish my work before submitting the project. I make sure that I submit my work to the clients on time.</p>
-
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-12">
-                                        <div class="card-grid">
-                                            <div class="card">
-                                                <div class="card-icon">
-                                                    <i class="bi bi-house-door"></i>
-                                                </div>
-                                                <div class="card-text">
-                                                    Home
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-icon">
-                                                    <i class="bi bi-briefcase"></i> 
-                                                </div>
-                                                <div class="card-text">
-                                                    Work
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-icon">
-                                                    <i class="bi bi-person"></i> 
-                                                </div>
-                                                <div class="card-text">
-                                                    Profile
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-icon">
-                                                    <i class="bi bi-gear"></i>
-                                                </div>
-                                                <div class="card-text">
-                                                    Settings
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        
-                    </div>
- 
-                    
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <!-- Feedback Section -->
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="bg-white">
                     
-                    <div style="margin:0 50px 50px 50px; display: grid; place-items: center;">
+                    <div class="custom_margin" style="display: grid; place-items: center;">
 
-                        <h2 class="title" style="text-align: center;"> Feedback from Clients</b></h2>
-                        <p class="text-muted  text-center">Hear what my satisfied clients have to say about the exceptional quality and creativity in my design projects</p>
+                        <h2 class="title text_hover" style="text-align: center;"> Feedback from Clients</b></h2>
+                        <p class="text-center">Hear what my satisfied clients have to say about the exceptional quality and creativity in my design projects</p>
                         
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <div class="card">
+                                    <div class="card mb-3">
                                         <div class="card-icon">
-                                            <img class="client_pic" src="{{ url_for('static', filename='img/dozeeye_manual_mockup.jpg') }}" alt="">
+                                            <img class="client_pic" src="{{ url_for('static', filename='img/feedback_1.jpg') }}" alt="">
                                         </div>
                                         <div class="card-text">
-                                            <p>When I am designing, I establish connections and communication with the clients and determine what are their specific goals or desired design for the project, I plan, research, and brainstorm for information and</p>
-                                            <h6 style="text-align: right;"><b>Name</b></h6>
+                                            <p style="font-size: small;">"The social media graphics James designed have increase our engagement and brand visibility. Each post is creative, on brand and resonates well with our audience. Fantastic work."</p>
+                                            <h6 style="text-align: right;"><b>Aro Sanuel Alca <br> EXCEL Chairman</b></h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="card">
+                                    <div class="card mb-3">
                                         <div class="card-icon">
-                                            <img class="client_pic" src="{{ url_for('static', filename='img/dozeeye_manual_mockup.jpg') }}" alt="">
+                                            <img class="client_pic" src="{{ url_for('static', filename='img/feedback_2.jpg') }}" alt="">
                                         </div>
                                         <div class="card-text">
-                                            <p>When I am designing, I establish connections and communication with the clients and determine what are their specific goals or desired design for the project, I plan, research, and brainstorm for information and</p>
-                                            <h6 style="text-align: right;"><b>Name</b></h6>
+                                            <p style="font-size: small;">"James created a logo for our brand that perfectly captures our identity. The process was smooth and the final design was beyond what we imagined. His works give value to our business."</p>
+                                            <h6 style="text-align: right;"><b>Jerome Juta <br> Anchors Dream Supervisor</b></h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="card">
+                                    <div class="card mb-3">
                                         <div class="card-icon">
-                                            <img class="client_pic" src="{{ url_for('static', filename='img/dozeeye_manual_mockup.jpg') }}" alt="">
+                                            <img class="client_pic" src="{{ url_for('static', filename='img/feedback_3.jpg') }}" alt="">
                                         </div>
                                         <div class="card-text">
-                                            <p>When I am designing, I establish connections and communication with the clients and determine what are their specific goals or desired design for the project, I plan, research, and brainstorm for information and</p>
-                                            <h6 style="text-align: right;"><b>Name</b></h6>
+                                            <p style="font-size: small;">"The print materials designed by James have significantly improved our marketing efforts. The brochures and flyers are professional, eye catching and perfectly aligned with our brand."</p>
+                                            <h6 style="text-align: right;"><b>Lanie Alcantara <br> Bagwis Adviser</b></h6>
                                         </div>
                                     </div>
                                 </div>
@@ -397,7 +245,7 @@
 
 
     <div class="container">
-        <div class="row" style="margin: 0 50px 50px 50px;">
+        <div class="row custom_margin">
             <div class="col-md-6">
                 <div >
                     <h2 class="title"> Educational Background</b></h2>

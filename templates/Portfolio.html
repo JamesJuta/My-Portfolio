@@ -15,12 +15,22 @@
                         <h2 class="title" style="text-align: center; font-size: 40px;"> <b class="gradient-text">Explore My Creative Projects</b></h2>
                         <p class="text-muted">Software/ Programs that I use for making different kind of projects </p>
                         
-                        <div class="pt-3 w-100 d-flex justify-content-between">
-                            <button type="button" class="btn btn-sm btn-outline-primary" style="width: 150px;">Let's talk <i class="bi bi-arrow-right"></i></button>
-                            <button type="button" class="btn btn-sm btn-primary" style="width: 150px;">Services</button>
-                            <button type="button" class="btn btn-sm btn-primary" style="width: 150px;">Services</button>
-                            <button type="button" class="btn btn-sm btn-primary" style="width: 150px;">Services</button>
-                            <button type="button" class="btn btn-sm btn-primary" style="width: 150px;">Services</button>
+                        <div class="d-flex">
+                            <li class="nav-item">
+                                <a class="nav-link{% if active_page == 'home' %} active{% endif %}" href="{{ url_for('home') }}" > Home</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link{% if active_page == 'portfolio' %} active{% endif %}" href="{{ url_for('portfolio') }}"> Portfolio</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link{% if active_page == 'services' %} active{% endif %}" href="{{ url_for('services') }}"> Services</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link{% if active_page == 'abouts' %} active{% endif %}" href="{{ url_for('abouts') }}" > Abouts</a>
+                            </li>
                         </div>
                        
                     </div>
