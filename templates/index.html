@@ -4,6 +4,8 @@
     {% set active_page = 'home' %}
     {% include "navbar.html" %}
 
+    <a id="button" class="shadow"><i class="bi bi-arrow-up"></i></a>
+
     <!-- hero section -->
     <!-- <div class="container">
         <div class="row" style="padding: 20px 0;">
@@ -39,7 +41,7 @@
                         <h3 class="title hero-subtitle">
                             Where creativity meets precision, transforming visions into masterpieces
                         </h3>
-                        <div class="pt-3">
+                        <div class="pt-3 mb-3">
                             <!-- <button type="button" class="btn btn-sm" style="width: 150px;">
                                 Let's talk <i class="bi bi-arrow-right"></i>
                             </button> -->
@@ -48,10 +50,10 @@
                         </div>
 
                         <div class="social-icons">
-                            <a href="#" class="bi bi-facebook" aria-label="Facebook"></a>
-                            <a href="#" class="bi bi-twitter" aria-label="Twitter"></a>
-                            <a href="#" class="bi bi-linkedin" aria-label="LinkedIn"></a>
-                            <a href="#" class="bi bi-instagram" aria-label="Instagram"></a>
+                            <a href="#" class="bi bi-facebook hero_social_icon" aria-label="Facebook"></a>
+                            <a href="#" class="bi bi-behance hero_social_icon" aria-label="Twitter"></a>
+                            <a href="#" class="bi bi-linkedin hero_social_icon" aria-label="LinkedIn"></a>
+                            <a href="#" class="bi bi-instagram hero_social_icon" aria-label="Instagram"></a>
                         </div>
                     </div>
                 </div>
@@ -79,12 +81,12 @@
     {% include "experience.html" %}
 
     <!-- My Latest Works -->
-    <div class="container">
+    <div class="container animation">
         <div class="row">
             <div class="col-12">
                 <div class="bg-white">
                     <div class="d-flex flex-column flex-md-row align-items-center justify-content-between custom_margin">
-                        <div class="p-2 mb-3 mb-md-0" style="width: 100%; max-width: 500px;">
+                        <div class="p-2 mb-3 mb-md-0 anm_mod left fast" style="width: 100%; max-width: 500px;">
                             <h2 class="title">My Latest Works</h2>
                             <h6>"Showcasing a Collection of My Most Recent and <br> Innovative Design Projects."</h6>
                             <p class="text-muted">Explore my latest creations that highlight my expertise in graphic design, including innovative UI design, captivating social media graphics, and eye-catching print materials and other types of digital assets. Each project showcases my ability to blend creativity with strategic design principles to deliver impactful visual solutions.</p>
@@ -92,7 +94,7 @@
                             <a class="btn" href="{{ url_for('portfolio') }}">View Portfolio</a>
                         </div>
 
-                        <div id="carouselExampleCaptions" class="carousel slide p-2" style="width: 100%; max-width: 600px; height: 400px;">
+                        <div id="carouselExampleCaptions" class="carousel slide p-2 anm_mod right fast" style="width: 100%; max-width: 600px; height: 400px;">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -137,8 +139,8 @@
     </div>
 
     <!-- Program skills -->
-    <div class="container">
-        <div class="row" style="padding: 20px 0;">
+    <div class="container animation">
+        <div class="row anm_mod full fast " style="padding: 20px 0;">
             <div class="col-12">
                 <div class="bg-white">
                     
@@ -182,15 +184,15 @@
 
 
     <!-- Feedback Section -->
-    <div class="container">
-        <div class="row">
+    <div class="container animation">
+        <div class="row anm_mod full fast">
             <div class="col-12">
                 <div class="bg-white">
                     
                     <div class="custom_margin" style="display: grid; place-items: center;">
 
                         <h2 class="title text_hover" style="text-align: center;"> Feedback from Clients</b></h2>
-                        <p class="text-center">Hear what my satisfied clients have to say about the exceptional quality and creativity in my design projects</p>
+                        <p class="text-center anm_mod full fast">Hear what my satisfied clients have to say about the exceptional quality and creativity in my design projects</p>
                         
                         <div class="container">
                             <div class="row">
@@ -244,11 +246,11 @@
 
 
 
-    <div class="container">
+    <div class="container animation">
         <div class="row custom_margin">
-            <div class="col-md-6">
+            <div class="col-md-6 anm_mod left fast">
                 <div >
-                    <h2 class="title"> Educational Background</b></h2>
+                    <!-- <h2 class="title"> Educational Background</b></h2>
                     <div class=" d-flex shadow-sm p-3" style="gap: 10px;">
                         
                         <div class="p-2" style="width: 40px; height: 40px; background-color: blue; border-radius: 50%; display: grid; place-items: center;" > <i class="bi bi-book" style="color: white;"></i></div>
@@ -269,53 +271,55 @@
                           
                         </div>
                         
+                    </div> -->
+
+
+                    <h2 class="title"> Professional Skills</b></h2>
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="bi bi-person-fill-check"></i> 
+                            </div>
+                            <div class="card-text">
+                                Professional <br> Teamwork
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="bi bi-check2-square"></i> 
+                            </div>
+                            <div class="card-text">
+                                Quality and <br> Goal Oriented
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="bi bi-clock-history"></i> 
+                            </div>
+                            <div class="card-text">
+                                Time <br> Management
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="bi bi-heart"></i>
+                            </div>
+                            <div class="card-text">
+                                Passionate and Hardworking
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 anm_mod right fast">
                 <div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-12">
 
-                                <h2 class="title"> Professional Skills</b></h2>
-                                <div class="card-grid">
-                                    <div class="card">
-                                        <div class="card-icon">
-                                            <i class="bi bi-person-fill-check"></i> 
-                                        </div>
-                                        <div class="card-text">
-                                            Professional <br> Teamwork
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-icon">
-                                            <i class="bi bi-check2-square"></i> 
-                                        </div>
-                                        <div class="card-text">
-                                            Quality and <br> Goal Oriented
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-icon">
-                                            <i class="bi bi-clock-history"></i> 
-                                        </div>
-                                        <div class="card-text">
-                                            Time <br> Management
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-icon">
-                                            <i class="bi bi-heart"></i>
-                                        </div>
-                                        <div class="card-text">
-                                            Passionate and Hardworking
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <br>
+                                
 
                                 <div style="text-align: left;">
                                     <h2 class="title"> Why Hire Me?</b></h2>
@@ -339,6 +343,90 @@
 
     
     {% include "footer.html" %}
+
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+        });
+
+        btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+        });
+
+        $(window).scroll(function() {
+            $(".animation .anm_mod").each(function() {
+            const position = $(this).offset().top;
+            const scroll = $(window).scrollTop();
+            const windowHeight = $(window).height();
+            if (scroll > position - windowHeight) {
+            $(this).addClass("active");
+            }
+            if (scroll < 100) {
+            $(this).removeClass("active");
+            }
+            });
+            });
+
+            $(function() {
+            $('a[href^="#"]').click(function() {
+            const speed = 800;
+            const href = $(this).attr("href");
+            const target = $(href == "#" || href == "" ? "html" : href);
+            const position = target.offset().top;
+            $("html, body").animate({ scrollTop: position }, speed, "swing");
+            return false;
+            });
+        });
+    </script>
+
+    <!-- <script>
+        $(document).ready(function() {
+            var btn = $('#button');
+
+            $(window).on('scroll', function() {
+                // Show/Hide Back to Top Button
+                if ($(window).scrollTop() > 300) {
+                    btn.addClass('show');
+                } else {
+                    btn.removeClass('show');
+                }
+
+                // Handle Scroll Animations
+                $(".animation .anm_mod").each(function() {
+                    const position = $(this).offset().top;
+                    const scroll = $(window).scrollTop();
+                    const windowHeight = $(window).height();
+                    if (scroll + windowHeight > position) {
+                        $(this).addClass("active");
+                    } else {
+                        $(this).removeClass("active");
+                    }
+                });
+            });
+
+            btn.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').stop().animate({ scrollTop: 0 }, 300);
+            });
+
+            $('a[href^="#"]').on('click', function() {
+                const speed = 800;
+                const href = $(this).attr("href");
+                const target = $(href == "#" || href == "" ? "html" : href);
+                const position = target.offset().top;
+                $('html, body').stop().animate({ scrollTop: position }, speed, "swing");
+                return false;
+            });
+        });
+
+    </script> -->
     
 </body>
 </html>
