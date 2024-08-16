@@ -1,39 +1,89 @@
 {% include "head.html" %}
 
-<body>
+<body style="background-color: #f3f7ff;">
     {% set active_page = 'portfolio' %}
     {% include "navbar.html" %}
+
+    <a id="button" class="shadow"><i class="bi bi-arrow-up"></i></a>
+
+    
 
     <!-- Portfolio -->
     <div class="container">
         <div class="row" style="padding: 20px 0;">
             <div class="col-12">
-                <div class="bg-white">
+                <div class="bg-white" style="border-radius: 10px;">
 
-                    <div style="margin: 50px; display: grid; place-items: center;">
+                    <div class="custom_margin" style=" padding-top: 50px; display: grid; place-items: center;">
 
                         <h2 class="title" style="text-align: center; font-size: 40px;"> <b class="gradient-text">Explore My Creative Projects</b></h2>
                         <p class="text-muted">Software/ Programs that I use for making different kind of projects </p>
                         
-                        <div class="d-flex">
-                            <li class="nav-item">
-                                <a class="nav-link{% if active_page == 'home' %} active{% endif %}" href="{{ url_for('home') }}" > Home</a>
-                            </li>
-        
-                            <li class="nav-item">
-                                <a class="nav-link{% if active_page == 'portfolio' %} active{% endif %}" href="{{ url_for('portfolio') }}"> Portfolio</a>
-                            </li>
-        
-                            <li class="nav-item">
-                                <a class="nav-link{% if active_page == 'services' %} active{% endif %}" href="{{ url_for('services') }}"> Services</a>
-                            </li>
-        
-                            <li class="nav-item">
-                                <a class="nav-link{% if active_page == 'abouts' %} active{% endif %}" href="{{ url_for('abouts') }}" > Abouts</a>
-                            </li>
+                        <div class="tabset text-center">
+                            <!-- Tab 1 -->
+                            <input type="radio" name="tabset" id="tab1" aria-controls="show_all" checked>
+                            <label for="tab1">Show All</label>
+                            <!-- Tab 2 -->
+                            <input type="radio" name="tabset" id="tab2" aria-controls="print_design">
+                            <label for="tab2">Print Design</label>
+                            <!-- Tab 3 -->
+                            <input type="radio" name="tabset" id="tab3" aria-controls="social_media">
+                            <label for="tab3">Social Media</label>
+                            <!-- Tab 4 -->
+                            <input type="radio" name="tabset" id="tab4" aria-controls="ui_design">
+                            <label for="tab4">UI Design</label>
+                            
+                            <div class="tab-panels">
+    
+                                <section id="show_all" class="tab-panel">
+
+                                    <div class="container p-0 animation">
+                                        <div class="row">
+                                            {% include "show_all.html" %}
+                                        </div>
+                                    </div>
+    
+                                </section>
+    
+    
+                                <section id="print_design" class="tab-panel">
+
+                                    <div class="container p-0 animation">
+                                        <div class="row">
+                                            {% include "print_design.html" %}
+                                        </div>
+                                    </div>
+
+                                </section>
+
+                                <section id="social_media" class="tab-panel">
+
+                                    <div class="container p-0 animation">
+                                        <div class="row">
+                                            {% include "social_media.html" %}
+                                        </div>
+                                    </div>
+
+                                </section>
+
+                                <section id="ui_design" class="tab-panel">
+
+                                    <div class="container p-0 animation">
+                                        <div class="row">
+                                            {% include "ui_design.html" %}
+                                        </div>
+                                    </div>
+
+                                </section>
+                              
+                            </div>
+                            
                         </div>
                        
                     </div>
+
+                    
+                      
 
                 </div>
             </div>
@@ -41,6 +91,49 @@
     </div>
 
     {% include "footer.html" %}
+
+    <script>
+
+        var btn = $('#button');
+
+        $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+        });
+
+        btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+        });
+
+        $(window).scroll(function() {
+            $(".animation .anm_mod").each(function() {
+            const position = $(this).offset().top;
+            const scroll = $(window).scrollTop();
+            const windowHeight = $(window).height();
+            if (scroll > position - windowHeight) {
+            $(this).addClass("active");
+            }
+            if (scroll < 100) {
+            $(this).removeClass("active");
+            }
+            });
+            });
+
+            $(function() {
+            $('a[href^="#"]').click(function() {
+            const speed = 800;
+            const href = $(this).attr("href");
+            const target = $(href == "#" || href == "" ? "html" : href);
+            const position = target.offset().top;
+            $("html, body").animate({ scrollTop: position }, speed, "swing");
+            return false;
+            });
+        });
+    </script>
     
 </body>
 </html>

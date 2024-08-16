@@ -388,6 +388,11 @@ p, h1, h2, h3, h4, h5, h6 {
     margin:0 50px 50px 50px;
 }
 
+.portfolio_card_text{
+    text-align: left; 
+    margin-left: 20px;
+}
+
 
 
 
@@ -487,7 +492,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 /* Scrollbar Styling */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 12px;
 }
  
@@ -501,7 +506,7 @@ p, h1, h2, h3, h4, h5, h6 {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: var(--primary-color); 
-}
+} */
 
 
 /* ========================= back to top button ========================= */
@@ -562,7 +567,7 @@ p, h1, h2, h3, h4, h5, h6 {
      align-items: center;
      /* text-align: center; */
      /* margin: 10px; */
-     width: 50%;
+     /* width: 50%; */
      /* height: 40vh; */
      /* border-radius: 10px;
      font-size: 2rem;
@@ -600,6 +605,91 @@ p, h1, h2, h3, h4, h5, h6 {
     right: 20px;
    
     }
+
+
+
+    .tabset > input[type="radio"] {
+        position: absolute;
+        left: -200vw;
+      }
+      
+      .tabset .tab-panel {
+        display: none;
+      }
+      
+      .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+      .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+      .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+      .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+      .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+      .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+        display: block;
+      }
+
+      
+      .tabset > label {
+        position: relative;
+        display: inline-block;
+        padding: 15px 15px;
+        border: 1px solid transparent;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: 0;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 1s;
+        color: var(--text-color);
+      }
+      
+      .tabset > label::after {
+        content: "";
+        position: absolute;
+        left: 15px;
+        bottom: 10px;
+        width: 22px;
+        height: 3px;
+        /* background: #8d8d8d; */
+      }
+      
+      input:focus-visible + label {
+        outline: 2px solid rgba(0,102,204,1);
+        border-radius: 3px;
+      }
+      
+      .tabset > label:hover,
+      .tabset > input:focus + label,
+      .tabset > input:checked + label {
+        /* color: var(--primary-color); */
+        /* font-weight: bold; */
+        background: linear-gradient(to right, #3dcaf5, #656afe);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+        background-clip: text; 
+        text-fill-color: transparent; 
+      }
+      
+      .tabset > label:hover::after,
+      .tabset > input:focus + label::after,
+      .tabset > input:checked + label::after {
+        background: #06c;
+      }
+      
+      .tabset > input:checked + label {
+        border-color: #ccc;
+        border-bottom: 1px solid #fff;
+        margin-bottom: -1px;
+      }
+      
+      .tab-panel {
+        padding: 30px 0;
+        border-top: 1px solid #ccc;
+        animation: transitionIn 0.5s;
+        
+      }
+      
+      .tabset {
+        max-width: 65em;
+      }
 
 
 /* =========================================== Responsive =========================================== */
