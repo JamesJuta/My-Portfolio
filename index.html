@@ -65,6 +65,46 @@
     </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm p-1 pe-5 ps-5" >
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="{{ url_for('static', filename='img/blue_logo.png') }}" alt="" height="50" class="d-inline-block align-text-top p-1">
+                <span class="navbar-brand mb-0 h6 p-0"><b style="color: var(--text-color);">JJ Designs</b></span>
+            </a>
+            <button class="navbar-toggler collapsed btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-underline mb-2 mb-lg-0 d-flex justify-content-between" style="width: 75%;">
+                    <div class="navlink-container">
+    
+                        <li class="nav-item">
+                            <a class="nav-link{% if active_page == 'home' %} active{% endif %}" href="{{ url_for('home') }}" > Home</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link{% if active_page == 'portfolio' %} active{% endif %}" href="{{ url_for('portfolio') }}"> Portfolio</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link{% if active_page == 'services' %} active{% endif %}" href="{{ url_for('services') }}"> Services</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link{% if active_page == 'abouts' %} active{% endif %}" href="{{ url_for('abouts') }}" > Abouts</a>
+                        </li>
+    
+                    </div>
+                    
+                    <a class="btn" style="width: 150px;" href="{{ url_for('lets_talk') }}">Let's talk <i class="bi bi-arrow-right"></i></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <a id="button" class="shadow"><i class="bi bi-arrow-up"></i></a>
 
@@ -114,6 +154,64 @@
             </div>
         </div>
     </div>
+
+        <!-- My Latest Works -->
+        <div class="container animation">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-white">
+                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between custom_margin">
+                            <div class="p-2 mb-3 mb-md-0 anm_mod left fast" style="width: 100%; max-width: 500px;">
+                                <h2 class="title">My Latest Works</h2>
+                                <h6>"Showcasing a Collection of My Most Recent and <br> Innovative Design Projects."</h6>
+                                <p class="text-muted">Explore my latest creations that highlight my expertise in graphic design, including innovative UI design, captivating social media graphics, and eye-catching print materials and other types of digital assets. Each project showcases my ability to blend creativity with strategic design principles to deliver impactful visual solutions.</p>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-primary" style="width: 150px;">View Portfolio</button> -->
+                                <a class="btn" href="">View Portfolio</a>
+                            </div>
+    
+                            <div id="carouselExampleCaptions" class="carousel slide p-2 anm_mod right fast" style="width: 100%; max-width: 600px; height: 500px;">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                </div>
+                                <div class="carousel-inner" style="border-radius: 10px; width: 100%; height: 100%;">
+                                    <div class="carousel-item active carousel-fit">
+                                        <img src="img/social_media.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                    </div>
+                                    <div class="carousel-item carousel-fit">
+                                        <img src="img/illustration_cover.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                    </div>
+                                    <div class="carousel-item carousel-fit">
+                                        <img src="img/bagwis_mockup_1.jpg'" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                    </div>
+                                    <div class="carousel-item carousel-fit">
+                                        <img src="img/dozeeye_manual_mockup.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                    </div>
+                                    <div class="carousel-item carousel-fit">
+                                        <img src="img/dozeeye_mobile.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                    </div>
+                                    <div class="carousel-item carousel-fit">
+                                        <img src="img/lagaslas_mockup_3.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script>
         var btn = $('#button');
