@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row" style="padding: 20px 0;">
             <div class="col-12">
-                <div class="bg-white" style="border-radius: 10px;">
+                <div class="bg-white shadow-sm" style="border-radius: 10px;">
 
                     <div class="custom_margin" style=" padding-top: 50px; display: grid; place-items: center;">
 
@@ -32,6 +32,15 @@
                             <!-- Tab 4 -->
                             <input type="radio" name="tabset" id="tab4" aria-controls="ui_design">
                             <label for="tab4">UI Design</label>
+
+                            <input type="radio" name="tabset" id="tab5" aria-controls="illustration">
+                            <label for="tab5">Illustration</label>
+
+                            <input type="radio" name="tabset" id="tab6" aria-controls="product_design">
+                            <label for="tab6">Product Design</label>
+
+                            <input type="radio" name="tabset" id="tab7" aria-controls="video">
+                            <label for="tab7">Video</label>
                             
                             <div class="tab-panels">
     
@@ -71,6 +80,68 @@
                                     <div class="container p-0 animation">
                                         <div class="row">
                                             {% include "ui_design.html" %}
+                                        </div>
+                                    </div>
+
+                                </section>
+
+                                <section id="illustration" class="tab-panel">
+
+                                    <div class="container p-0 animation">
+                                        <div class="row">
+                                            {% include "illustration.html" %}
+                                        </div>
+                                    </div>
+
+                                </section>
+
+                                <section id="product_design" class="tab-panel">
+
+                                    <div class="container p-0 animation">
+                                        <div class="row">
+                                            {% include "product_design.html" %}
+                                        </div>
+                                    </div>
+
+                                </section>
+
+                                <section id="video" class="tab-panel">
+
+                                    <div class="container p-0 animation">
+                                        <div class="row">
+
+                                            <div class="col-md-4">
+                                                <div class="card mb-3 p-0">
+                                            
+                                                    <img class="" style="object-fit: cover; width: 100%; border-radius: 10px;" src="{{ url_for('static', filename='img/bagwis_mockup_1.jpg') }}" alt="">
+                                                    
+                                                    <div class="card-text" style="height: fit-content;">
+                                            
+                                                        <p class="pt-2 mb-0 portfolio_card_text" >Print Design</p>
+                                                        <h5 class="p-0 portfolio_card_text"><b>Bagwis Vol 3 Issue 1</b></h5>
+                                                    
+                                                    </div>
+                                            
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                            
+                                                <div class="card mb-3 p-0">
+                                            
+                                                    <img class="" style="object-fit: cover; width: 100%; border-radius: 10px;" src="{{ url_for('static', filename='img/lagaslas_mockup_3.jpg') }}" alt="">
+                                                    
+                                                    <div class="card-text" style="height: fit-content;">
+                                            
+                                                        <p class="pt-2 mb-0 portfolio_card_text">Print Design</p>
+                                                        <h5 class="p-0 portfolio_card_text"><b>Ang Lagaslas Vol 14 Issue 1</b></h5>
+                                                    
+                                                    </div>
+                                            
+                                                </div>
+                                            
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -131,6 +202,30 @@
             const position = target.offset().top;
             $("html, body").animate({ scrollTop: position }, speed, "swing");
             return false;
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabsetInputs = document.querySelectorAll('.tabset input[type="radio"]');
+            const tabPanels = document.querySelectorAll('.tab-panel');
+        
+            tabsetInputs.forEach(input => {
+                input.addEventListener('change', function() {
+                    // Hide all tab panels initially
+                    tabPanels.forEach(panel => {
+                        panel.style.display = 'none';
+                        panel.style.opacity = '0'; // Set opacity to 0 to fade out
+                    });
+        
+                    // Show the active tab panel
+                    const activePanel = document.querySelector(`#${this.getAttribute('aria-controls')}`);
+                    activePanel.style.display = 'block'; // Display the active panel
+                    setTimeout(() => {
+                        activePanel.style.opacity = '1'; // Fade in the active panel
+                    }, 10); // Delay to allow display change
+                });
             });
         });
     </script>

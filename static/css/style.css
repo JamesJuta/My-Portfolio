@@ -611,23 +611,31 @@ p, h1, h2, h3, h4, h5, h6 {
     .tabset > input[type="radio"] {
         position: absolute;
         left: -200vw;
-      }
-      
-      .tabset .tab-panel {
-        display: none;
-      }
-      
-      .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
-      .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
-      .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
-      .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
-      .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
-      .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
-        display: block;
-      }
-
-      
-      .tabset > label {
+    }
+    
+    .tabset .tab-panel {
+        display: none; /* Hide all tab panels by default */
+        opacity: 0; /* Set initial opacity to 0 for fade effect */
+        transition: opacity 1s ease; /* Add transition effect */
+    }
+    
+    .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+    .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+    .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+    .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+    .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+    .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+        display: block; /* Show the selected tab panel */
+        opacity: 1; /* Fade in */
+    }
+    
+    /* Hide panel when not active */
+    /* .tabset .tab-panel:not(:checked) {
+        opacity: 0; 
+        pointer-events: none; 
+    } */
+    
+    .tabset > label {
         position: relative;
         display: inline-block;
         padding: 15px 15px;
@@ -639,57 +647,52 @@ p, h1, h2, h3, h4, h5, h6 {
         font-weight: 600;
         transition: all 1s;
         color: var(--text-color);
-      }
-      
-      .tabset > label::after {
+    }
+    
+    .tabset > label::after {
         content: "";
         position: absolute;
         left: 15px;
         bottom: 10px;
         width: 22px;
         height: 3px;
-        /* background: #8d8d8d; */
-      }
-      
-      input:focus-visible + label {
-        outline: 2px solid rgba(0,102,204,1);
+    }
+    
+    input:focus-visible + label {
+        outline: 2px solid rgba(0, 102, 204, 1);
         border-radius: 3px;
-      }
-      
-      .tabset > label:hover,
-      .tabset > input:focus + label,
-      .tabset > input:checked + label {
-        /* color: var(--primary-color); */
-        /* font-weight: bold; */
+    }
+    
+    .tabset > label:hover,
+    .tabset > input:focus + label,
+    .tabset > input:checked + label {
         background: linear-gradient(to right, #3dcaf5, #656afe);
-        -webkit-background-clip: text; 
-        -webkit-text-fill-color: transparent; 
-        background-clip: text; 
-        text-fill-color: transparent; 
-      }
-      
-      .tabset > label:hover::after,
-      .tabset > input:focus + label::after,
-      .tabset > input:checked + label::after {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    
+    .tabset > label:hover::after,
+    .tabset > input:focus + label::after,
+    .tabset > input:checked + label::after {
         background: #06c;
-      }
-      
-      .tabset > input:checked + label {
+    }
+    
+    .tabset > input:checked + label {
         border-color: #ccc;
         border-bottom: 1px solid #fff;
         margin-bottom: -1px;
-      }
-      
-      .tab-panel {
+    }
+    
+    .tab-panel {
         padding: 30px 0;
         border-top: 1px solid #ccc;
-        animation: transitionIn 0.5s;
-        
-      }
-      
-      .tabset {
+    }
+    
+    .tabset {
         max-width: 65em;
-      }
+    }
 
 
 /* =========================================== Responsive =========================================== */
