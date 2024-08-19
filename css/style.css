@@ -733,6 +733,10 @@ p, h1, h2, h3, h4, h5, h6 {
     .custom_margin{
         margin:0 15px 15px 15px;
     }
+    .navbar{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -746,6 +750,7 @@ p, h1, h2, h3, h4, h5, h6 {
     .connect_with_me{
         font-size: 26px;
     }
+
 }
 
 @media (max-width: 576px) {
@@ -758,6 +763,9 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     .connect_with_me{
         font-size: 24px;
+    }
+    .contact-form{
+        padding: 10px;
     }
 }
 /* ================ */
