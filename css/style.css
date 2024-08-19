@@ -146,8 +146,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Lines of the Toggler */
 .toggler-icon{
-    width: 30px;
-    height: 3px;
+    width: 20px;
+    height: 2px;
     background-color: var(--primary-color);
     display: block;
     transition: all 0.2s;
@@ -161,7 +161,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* State when navbar is opened (START) */
 .navbar-toggler .top-bar {
     transform: rotate(45deg);
-    transform-origin: 10% 10%;
+    transform-origin: 0% 70%;
 }
 
 .navbar-toggler .middle-bar {
@@ -171,7 +171,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .navbar-toggler .bottom-bar {
     transform: rotate(-45deg);
-    transform-origin: 10% 90%;
+    transform-origin: 5% 90%;
 }
 /* State when navbar is opened (END) */
 
@@ -749,6 +749,9 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     .connect_with_me{
         font-size: 26px;
+    }
+    .navbar-brand{
+        font-size: 16px;
     }
 
 }
