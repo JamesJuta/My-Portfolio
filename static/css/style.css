@@ -449,6 +449,12 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 5px;
 }
 
+.folio_image{
+    object-fit: cover; 
+    width: 100%; 
+    border-radius: 10px;
+}
+
 
 
 
