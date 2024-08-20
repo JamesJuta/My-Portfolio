@@ -9,7 +9,7 @@
     --sidebar-color: #FFF;
     --primary-color: #1A73E8;
     /* --primary-color: #27227e; */
-    /* --primary-color: linear-gradient(to right, #3dcaf5, #656afe); */
+    /* --primary-color: linear-gradient(to right, #3dcaf5, #27227e); */
     --primary-color-light: #F6F5FF;
     --secondary-color: #2f2f41;
     --toggle-color: #DDD;
@@ -34,6 +34,11 @@
     --body-font: 'Montserrat', sans-serif;
     --normal-font-size: 1rem;
     --small-font-size: .75rem;
+
+    --blue_1: #0077b6;
+    --blue_2: #00b4d8;
+    --blue_3: #90e0ef;
+    
 }
 *{
     margin: 0;
@@ -171,7 +176,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .navbar-toggler .bottom-bar {
     transform: rotate(-45deg);
-    transform-origin: 5% 90%;
+    transform-origin: 5% 80%;
 }
 /* State when navbar is opened (END) */
 
@@ -310,10 +315,15 @@ p, h1, h2, h3, h4, h5, h6 {
     background-color: var(--primary-color);
 }
 
+
+
+
 .gradient-text {
     /* font-size: 4rem; */
     font-weight: bold;
-    background: linear-gradient(to right, #3dcaf5, #656afe); /* Define the gradient */
+    background: linear-gradient(to right, #3dcaf5, #656afe); 
+    /* background: linear-gradient(to right, #3dcaf5, #27227e);  */
+    /* background: linear-gradient(to right, var(--primary-color) ,#54b3d6 50%); */ #27227e
     -webkit-background-clip: text; /* Apply gradient to text */
     -webkit-text-fill-color: transparent; /* Make the text color transparent */
     background-clip: text; /* For non-WebKit browsers (some support it) */
@@ -464,12 +474,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 .text_hover {
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       to right,
       #54b3d6,
       #54b3d6 50%,
       var(--text-color) 50%
-    );
+    ); */
+
+    background-image: linear-gradient(to right, var(--primary-color) ,#54b3d6 50%, var(--text-color) 50%);
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;
@@ -482,7 +494,8 @@ p, h1, h2, h3, h4, h5, h6 {
   
   .text_hover:before {
     content: '';
-    background: #54b3d6;
+    /* background: #54b3d6; */
+    background: var(--primary-color);
     display: block;
     position: absolute;
     bottom: -3px;
@@ -756,6 +769,9 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     .navbar-brand{
         font-size: 16px;
+    }
+    .folio_title{
+        font-size: 35px;
     }
 
 }
