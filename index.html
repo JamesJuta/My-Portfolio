@@ -139,19 +139,19 @@
         </a>
         <a href="portfolio.html" class="bottom-link">
             <span>
-                <i class="bi bi-images"></i> <br> <b>Portfolio</b>
+                <i class="bi bi-images"></i> <br> Portfolio
             </span>
         </a>
 
         <a href="abouts.html" class="bottom-link">
             <span>
-                <i class="bi bi-person-lines-fill"></i> <br> <b>Abouts</b>
+                <i class="bi bi-person-lines-fill"></i> <br> Abouts
             </span>
         </a>
 
         <a href="lets_talk.html" class="bottom-link">
             <span>
-                <i class="bi bi-chat-text-fill"></i> <br> <b>Let's talk</b>
+                <i class="bi bi-chat-text-fill"></i> <br> Let's talk
             </span>
         </a>
 
@@ -615,17 +615,17 @@
         menuToggle.addEventListener('change', () => {
             if (menuToggle.checked) {
                 menuIcon.innerHTML = '&times;'; // Change to X icon
-                document.querySelector('.sidebar').style.left = '0'; // Show sidebar
+                document.querySelector('.sidebar').style.right = '0'; // Show sidebar
             } else {
                 menuIcon.innerHTML = '&#9776;'; // Change back to hamburger menu
-                document.querySelector('.sidebar').style.left = '-250px'; // Hide sidebar
+                document.querySelector('.sidebar').style.right = '-250px'; // Hide sidebar
             }
         });
 
         overlay.addEventListener('click', () => {
             menuToggle.checked = false;
             menuIcon.innerHTML = '&#9776;';
-            document.querySelector('.sidebar').style.left = '-250px';
+            document.querySelector('.sidebar').style.right = '-250px';
         });
 
     </script>
