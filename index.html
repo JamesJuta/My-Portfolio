@@ -29,12 +29,12 @@
     
         <title>JJ Designs</title>
     </head>
-<body >
+<body style="background-color: #f3f7ff;">
 
-    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm p-1 pe-2 ps-2" >
+    <!-- <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm p-1 pe-2 ps-2" >
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="img/blue_logo.png" alt="" height="45" class="d-inline-block align-text-top p-1">
+                <img src="img/blue_logo.png" alt="" height="50" class="d-inline-block align-text-top p-1">
                 <span class="navbar-brand mb-0 h6 p-0"><b style="color: var(--text-color);">JJ Designs</b></span>
             </a>
             <button class="navbar-toggler collapsed btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
             </button>
     
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-underline mb-2 mb-lg-0 d-flex justify-content-between" ">
+                <ul class="navbar-nav nav-underline mb-2 mb-lg-0 d-flex justify-content-between" style="width: 75%;">
                     <div class="navlink-container">
     
                         <li class="nav-item">
@@ -55,9 +55,7 @@
                             <a class="nav-link" href="portfolio.html"> Portfolio</a>
                         </li>
     
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="services.html"> Services</a>
-                        </li> -->
+                       
     
                         <li class="nav-item">
                             <a class="nav-link" href="abouts.html" > Abouts</a>
@@ -68,10 +66,70 @@
                     <a class="btn" style="width: 150px;" href="lets_talk.html">Let's talk <i class="bi bi-arrow-right"></i></a>
                 </ul>
             </div>
+        </div>
+    </nav> -->
 
-            
+    <nav class="navbar shadow-sm sticky-top">
+        <div class="logo">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/blue_logo.png" alt="" height="45" class="d-inline-block align-text-top p-1">
+                <span class="navbar-brand mb-0 h6 p-0"><b style="color: var(--text-color);">JJ Designs</b></span>
+            </a>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="nav-links">
+            <ul class="navbar-nav nav-underline mb-2 mb-lg-0 d-flex justify-content-between">
+                <div class="navlink-container d-flex justify-content-around"  style="width: 200px; position: relative; right: 20px;">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" > Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html"> Portfolio</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="abouts.html" > Abouts</a>
+                    </li>
+
+                </div>
+                
+
+            </ul>
+        </div>
+        <!-- <button class="cta-btn">Sign Up</button> -->
+        <a class="btn cta-btn" style="width: 150px;" href="lets_talk.html">Let's talk <i class="bi bi-arrow-right"></i></a>
+
+        <div class="sidebar">
+
+            <ul class="navbar-nav nav-underline mb-2 mb-lg-0 d-flex justify-content-between">
+                <div class="navlink-container"  style="width: 200px; position: relative; right: 20px;">
+    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" > Home</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html"> Portfolio</a>
+                    </li>
+    
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="abouts.html" > Abouts</a>
+                    </li>
+    
+                </div>
+                
+    
+            </ul>
+            <a class="btn" style="width: 100%; color: var(--primary-color);" href="lets_talk.html">Let's talk <i class="bi bi-arrow-right"></i></a>
         </div>
     </nav>
+
+    
 
     <div class="bottom-nav-bar shadow-sm">
         <a href="index.html" class="bottom-link active">
@@ -98,367 +156,396 @@
         </a>
 
     </div>
-    
 
     <!-- move to top button -->
-    <a id="button" class="move_to_top_btn shadow"><i class="bi bi-arrow-up"></i></a>
+    <a id="button" class="shadow"><i class="bi bi-arrow-up"></i></a>
 
     <!-- Home -->
     <div class="container animation">
         <div class="row" style="padding: 20px 0;">
             <div class="col-12">
-                <div class="bg-white" style="border-radius: 10px;">
+                <div class="bg-white shadow-sm" style="border-radius: 10px;">
 
-                    <div class="hero-content custom_margin">
-                        <h1 class="title hero-title pt-2">
-                            I’m James, a <b class="gradient-text">Graphic Designer</b>
-                        </h1>
-                        <h3 class="title hero-subtitle">
-                            Where creativity meets precision, transforming visions into masterpieces
-                        </h3>
-                        <div class="pt-3 mb-3">
-                            <a class="btn btn-sm" style="width: 150px;" href="lets_talk.html">Let's talk <i class="bi bi-arrow-right"></i></a>
-                            <a class="btn btn-sm" style="width: 150px;" href="portfolio.html">View Portfolio</a>
-                        </div>
+                    <div class="custom_margin" style=" padding-top: 50px; display: grid; place-items: center;">
 
-                        <div class="social-icons mb-3">
-                            <a href="tel:+639067265342" class="hero_social_icon"><i class="bi bi-telephone-fill"></i></a>
-                            <a href="mailto:03jamesjuta0617@gmail.com" class="hero_social_icon"><i class="bi bi-envelope"></i></a>
-                            <a href="https://www.facebook.com/james.juta.0617/" class="hero_social_icon"><i class="bi bi-facebook"></i></a>
-                            <!-- <a href="#" class="hero_social_icon"><i class="bi bi-behance"></i></a> -->
-                        </div>
+                            
 
-                        <!-- banner -->
-                        <div class="">
-                            <img src="img/banner.gif" class="d-block shadow-sm w-100" alt="..." style="border-radius: 10px;">
-                        </div>
                         
-                        <!-- work experience -->
-                        <div class="anm_mod full" style="display: grid; place-items: center; text-align: left ; margin-top: 50px;">
+                            <h1 class="title hero-title pt-2" style="text-align: center;">
+                                I’m James, a <b class="gradient-text">Graphic Designer</b>
+                            </h1>
+                            <h3 class="title hero-subtitle text-center">
+                                Where creativity meets precision, transforming visions into masterpieces
+                            </h3>
+                            <div class="pt-3 mb-3">
+                                <a class="btn btn-sm" style="width: 150px;" href="lets_talk.html">Let's talk <i class="bi bi-arrow-right"></i></a>
+                                <a class="btn btn-sm" style="width: 150px;" href="portfolio.html">View Portfolio</a>
+                            </div>
     
-                            <h2 class="title" style="text-align: center; font-size: 30;"> My Work <span style="color: var(--primary-color);"> Experience</span></h2>
-                            <p class="text-muted text-center">"Unleashing creativity with every stroke, shaping experiences that captivate and engage."</p>
+                            <div class="social-icons mb-3">
+                                <a href="tel:+639067265342" class="hero_social_icon"><i class="bi bi-telephone-fill"></i></a>
+                                <a href="mailto:03jamesjuta0617@gmail.com" class="hero_social_icon"><i class="bi bi-envelope"></i></a>
+                                <a href="https://www.facebook.com/james.juta.0617/" class="hero_social_icon"><i class="bi bi-facebook"></i></a>
+                                <!-- <a href="#" class="hero_social_icon"><i class="bi bi-behance"></i></a> -->
+                            </div>
+    
+                            <!-- banner -->
+                            <div class="">
+                                <img src="img/banner.gif" class="d-block shadow-sm w-100" alt="..." style="border-radius: 10px;">
+                            </div>
                             
+                            <!-- work experience -->
+                            <div class="anm_mod full" style="display: grid; place-items: center; text-align: left ; margin-top: 50px;">
         
-                            <div class="accordion w-100 shadow-sm" id="accordionPanelsStayOpenExample">
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                        <div class="d-flex" style="gap: 15px;">
-                                            <div class="p-2 circle-icon"> <b>01</b></div>
-                                            <span>
-                                                <strong>Executive Computer Education Leaders (EXCEL)</strong>
-                                                 <br> Calamba City, Laguna, October 2023 - June 2024 | 8 mos
-                                            </span>
-                                        </div>
-                                        
-                                        
-                                    </button>
-                                  </h2>
-                                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                                    <div class="accordion-body">
-                                        <p class="accordion-body-text">
-                                            <strong>Graphic Designer. </strong>Executive Computer Education Leaders (EXCEL) is an organization at City College of Calamba whose primary goal is to catalyze excellence in students by teaching computer literacy. As part of the Graphics Team in EXCEL, my role was to design social media postings, graphics and Powerpoint presentations that are used by the organization.
-                                        </p>
-                                    </div>
-                                  </div>
-                                </div>
+                                <h2 class="title" style="text-align: center; font-size: 30;"> My Work <span style="color: var(--primary-color);"> Experience</span></h2>
+                                <p class="text-muted text-center">"Unleashing creativity with every stroke, shaping experiences that captivate and engage."</p>
                                 
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                        <div class="d-flex" style="gap: 15px;">
-                                            <div class="p-2 circle-icon"> <b>02</b></div>
-                                            <span>
-                                                <strong>Bagwis (Culion National High School) </strong>
-                                                 <br> Culion, Palawan , February 2024 - April 2024 | 3 mos
-                                            </span>
+            
+                                <div class="accordion w-100 shadow-sm" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                            <div class="d-flex" style="gap: 15px;">
+                                                <div class="p-2 circle-icon"> <b>01</b></div>
+                                                <span>
+                                                    <strong>Executive Computer Education Leaders (EXCEL)</strong>
+                                                     <br> Calamba City, Laguna, October 2023 - June 2024 | 8 mos
+                                                </span>
+                                            </div>
+                                            
+                                            
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body-text">
+                                                <strong>Graphic Designer. </strong>Executive Computer Education Leaders (EXCEL) is an organization at City College of Calamba whose primary goal is to catalyze excellence in students by teaching computer literacy. As part of the Graphics Team in EXCEL, my role was to design social media postings, graphics and Powerpoint presentations that are used by the organization.
+                                            </p>
                                         </div>
-                                    </button>
-                                  </h2>
-                                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        <p class="accordion-body-text">
-                                            <strong>Layout Artist. </strong>Designing newspaper layout and graphics for contests and competing at the Division, Regional and Nationals Schools Press Conference.
-                                        </p>
-                                    </div>
-                                  </div>
-                                </div>
-        
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                        <div class="d-flex" style="gap: 15px;">
-                                            <div class="p-2 circle-icon"> <b>03</b></div>
-                                            <span>
-                                                <strong>Gender and Development (GAD) </strong>
-                                                 <br> Calamba City, Laguna, July 2021 - January 2022 | 7 mos
-                                            </span>
-                                        </div>
-                                    </button>
-                                  </h2>
-                                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                                    <div class="accordion-body">
-                                        <p class="accordion-body-text">
-                                            <strong>Data Encoder and Photo Editor. </strong>It is a data entry and photo editing job in the municipal Government of Calamba wherein we interview people, encode information, and edit their photos for ID
-                                        </p>
-                                    </div>
-                                  </div>
-                                </div>
-        
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                                          <div class="d-flex" style="gap: 15px;">
-                                              <div class="p-2 circle-icon"> <b>04</b></div>
-                                              <span>
-                                                  <strong>Anchor's  Dream Mobile Bar </strong>
-                                                   <br> Calamba City,  Laguna, January 2020 - April 2020 | 3 mos
-                                              </span>
-                                          </div>
-                                      </button>
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-                                      <div class="accordion-body">
-                                          <p class="accordion-body-text">
-                                              <strong>Freelance Graphic Artist. </strong>Graphic designs like posters, menu, logo, and photo editing that is needed in the business.
-                                          </p>
                                       </div>
                                     </div>
-                                </div>
-        
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                                          <div class="d-flex" style="gap: 15px;">
-                                              <div class="p-2 circle-icon"> <b>05</b></div>
-                                              <span>
-                                                  <strong>Ang Lagaslas | Lecheria Integrated School </strong>
-                                                   <br> Calamba City, Laguna, June 2019 - November 2019 | 4 mos
-                                              </span>
-                                          </div>
-                                      </button>
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
-                                      <div class="accordion-body">
-                                          <p class="accordion-body-text">
-                                              <strong>Layout Artist. </strong>Making infographics and newspaper layouts that are used in competition for division and regional levels of different Schools
-                                          </p>
+                                    
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                            <div class="d-flex" style="gap: 15px;">
+                                                <div class="p-2 circle-icon"> <b>02</b></div>
+                                                <span>
+                                                    <strong>Bagwis (Culion National High School) </strong>
+                                                     <br> Culion, Palawan , February 2024 - April 2024 | 3 mos
+                                                </span>
+                                            </div>
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body-text">
+                                                <strong>Layout Artist. </strong>Designing newspaper layout and graphics for contests and competing at the Division, Regional and Nationals Schools Press Conference.
+                                            </p>
+                                        </div>
                                       </div>
                                     </div>
+            
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            <div class="d-flex" style="gap: 15px;">
+                                                <div class="p-2 circle-icon"> <b>03</b></div>
+                                                <span>
+                                                    <strong>Gender and Development (GAD) </strong>
+                                                     <br> Calamba City, Laguna, July 2021 - January 2022 | 7 mos
+                                                </span>
+                                            </div>
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body-text">
+                                                <strong>Data Encoder and Photo Editor. </strong>It is a data entry and photo editing job in the municipal Government of Calamba wherein we interview people, encode information, and edit their photos for ID
+                                            </p>
+                                        </div>
+                                      </div>
+                                    </div>
+            
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                              <div class="d-flex" style="gap: 15px;">
+                                                  <div class="p-2 circle-icon"> <b>04</b></div>
+                                                  <span>
+                                                      <strong>Anchor's  Dream Mobile Bar </strong>
+                                                       <br> Calamba City,  Laguna, January 2020 - April 2020 | 3 mos
+                                                  </span>
+                                              </div>
+                                          </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                          <div class="accordion-body">
+                                              <p class="accordion-body-text">
+                                                  <strong>Freelance Graphic Artist. </strong>Graphic designs like posters, menu, logo, and photo editing that is needed in the business.
+                                              </p>
+                                          </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                              <div class="d-flex" style="gap: 15px;">
+                                                  <div class="p-2 circle-icon"> <b>05</b></div>
+                                                  <span>
+                                                      <strong>Ang Lagaslas | Lecheria Integrated School </strong>
+                                                       <br> Calamba City, Laguna, June 2019 - November 2019 | 4 mos
+                                                  </span>
+                                              </div>
+                                          </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                          <div class="accordion-body">
+                                              <p class="accordion-body-text">
+                                                  <strong>Layout Artist. </strong>Making infographics and newspaper layouts that are used in competition for division and regional levels of different Schools
+                                              </p>
+                                          </div>
+                                        </div>
+                                    </div>
+            
+                                    
+            
                                 </div>
-        
-                                
-        
-                            </div>
-                        </div>
-
-                        <!-- latest works -->
-                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between" style="text-align: left; margin-top: 50px;">
-                            <div class="anm_mod fast p-2 mb-3 mb-md-0" style="width: 100%; max-width: 500px;">
-                                <h2 class="title">Explore My <span style="color: var(--primary-color);">Latest Works</span></h2>
-                                <h6>"Showcasing a Collection of My Most Recent and Innovative Design Projects."</h6>
-                                <p class="text-muted">Explore my latest creations that highlight my expertise in graphic design, including innovative UI design, captivating social media graphics, and eye catching print materials and other types of digital assets. Each project showcases my ability to blend creativity with strategic design principles to deliver impactful visual solutions</p>
-                                <button type="button" class="view_folio_btn btn btn-sm btn-outline-primary">View Portfolio</button>
                             </div>
     
-                            <div id="carouselExampleCaptions" class="carousel slide p-2 anm_mod fast" style="width: 100%; max-width: 600px; height: 450px;">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <!-- latest works -->
+                            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between" style="text-align: left; margin-top: 50px;">
+                                <div class="anm_mod fast p-2 mb-3 mb-md-0" style="width: 100%; max-width: 500px;">
+                                    <h2 class="title">Explore My <span style="color: var(--primary-color);">Latest Works</span></h2>
+                                    <h6>"Showcasing a Collection of My Most Recent and Innovative Design Projects."</h6>
+                                    <p class="text-muted">Explore my latest creations that highlight my expertise in graphic design, including innovative UI design, captivating social media graphics, and eye catching print materials and other types of digital assets. Each project showcases my ability to blend creativity with strategic design principles to deliver impactful visual solutions</p>
+                                    <button type="button" class="view_folio_btn btn btn-sm btn-outline-primary">View Portfolio</button>
                                 </div>
-                                <div class="carousel-inner" style="border-radius: 10px; width: 100%; height: 100%;">
-                                    <div class="carousel-item active carousel-fit">
-                                        <img src="img/social_media.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+        
+                                <div id="carouselExampleCaptions" class="carousel slide p-2 anm_mod fast" style="width: 100%; max-width: 600px; height: 450px;">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
                                     </div>
-                                    <div class="carousel-item carousel-fit">
-                                        <img src="img/illustration_cover.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                    <div class="carousel-inner" style="border-radius: 10px; width: 100%; height: 100%;">
+                                        <div class="carousel-item active carousel-fit">
+                                            <img src="img/social_media.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                        </div>
+                                        <div class="carousel-item carousel-fit">
+                                            <img src="img/illustration_cover.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                        </div>
+                                        <div class="carousel-item carousel-fit">
+                                            <img src="img/bagwis_mockup_1.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                        </div>
+                                        <div class="carousel-item carousel-fit">
+                                            <img src="img/dozeeye_manual_mockup.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                        </div>
+                                        <div class="carousel-item carousel-fit">
+                                            <img src="img/dozeeye_mobile.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                        </div>
+                                        <div class="carousel-item carousel-fit">
+                                            <img src="img/lagaslas_mockup_3.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
+                                        </div>
                                     </div>
-                                    <div class="carousel-item carousel-fit">
-                                        <img src="img/bagwis_mockup_1.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
-                                    </div>
-                                    <div class="carousel-item carousel-fit">
-                                        <img src="img/dozeeye_manual_mockup.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
-                                    </div>
-                                    <div class="carousel-item carousel-fit">
-                                        <img src="img/dozeeye_mobile.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
-                                    </div>
-                                    <div class="carousel-item carousel-fit">
-                                        <img src="img/lagaslas_mockup_3.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: cover;">
-                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
                             </div>
-                        </div>
-
-                        <!-- program skills -->
-                        <div class="anm_mod full fast" style=" display: grid; place-items: center; margin-top: 50px;">
-
-                            <h2 class="title" style="text-align: center;"> Program <span style="color: var(--primary-color);">Skills</span></h2>
-                            <p class="text-center">Software/ Programs that I use for making different kind of projects </p>
-                            
-                            <div class="d-block">
-                                <div class="d-flex align-items-center">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/Photoshop_logo.png" alt="">
-                                    <img style="width: 38px; height: 38px;" src="img/indesign_logo.png" alt="">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/Illustrator logo.png" alt="">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/word_logo.png" alt="">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/Excel_logo.png" alt="">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/ppt_logo.png" alt="">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/publisher_logo.png" alt="">
-                                   
+    
+                            <!-- program skills -->
+                            <div class="anm_mod full fast" style=" display: grid; place-items: center; margin-top: 50px;">
+    
+                                <h2 class="title" style="text-align: center;"> Program <span style="color: var(--primary-color);">Skills</span></h2>
+                                <p class="text-center">Software/ Programs that I use for making different kind of projects </p>
+                                
+                                <div class="d-block">
+                                    <div class="d-flex align-items-center">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/Photoshop_logo.png" alt="">
+                                        <img style="width: 38px; height: 38px;" src="img/indesign_logo.png" alt="">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/Illustrator logo.png" alt="">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/word_logo.png" alt="">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/Excel_logo.png" alt="">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/ppt_logo.png" alt="">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/publisher_logo.png" alt="">
+                                       
+                                    </div>
+        
+                                    <div class="d-flex align-items-center">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/Figma_logo.png" alt="">
+                                        <img style="width: 38px; height: 38px;" src="img/capcut_logo.png" alt="">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/canva_logo.png" alt="">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/drive_logo.png" alt="">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/gmail_logo.png" alt="">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/quilbot_logo.png" alt="">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/chatgpt_logo.png" alt="">
+                                       
+                                    </div>
+    
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/html.png" alt="">
+                                        <img style="width: 50px; height: 50px;" src="img/css.png" alt="">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/js.png" alt="">
+                                        <img style="width: 50px; height: 50px; object-fit: cover;" src="img/bootstrap.png" alt="">
+                                       
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+    
+    
+                            <!-- feedback -->
+                            <div class="" style="display: grid; place-items: center; margin-top: 50px; background-color: rgb(240, 248, 255); padding: 30px; border-radius: 10px;">
+    
+                                <div class="anm_mod fast">
+                                    <h2 class="title" style="text-align: center;"> <span style="color: var(--primary-color);">Feedback</span>  from Clients</h2>
+                                    <p class="text-center anm_mod full fast">Hear what my satisfied clients have to say about the exceptional quality and creativity in my design projects</p>
                                 </div>
     
-                                <div class="d-flex align-items-center">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/Figma_logo.png" alt="">
-                                    <img style="width: 38px; height: 38px;" src="img/capcut_logo.png" alt="">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/canva_logo.png" alt="">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/drive_logo.png" alt="">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/gmail_logo.png" alt="">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/quilbot_logo.png" alt="">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/chatgpt_logo.png" alt="">
+                                
+                                
+                                <div class="row">
+                                    <div class="col-md-4 anm_mod fast">
+                                        <div class="card mb-3">
+                                            <div class=""></div>
+                                            <div class="card-icon">
+                                                <img class="client_pic" src="img/feedback_1.jpg" alt="">
+                                            </div>
+                                            <div class="card-text">
+                                                <p style="font-size: small;">"The social media graphics James designed have increase our engagement and brand visibility. Each post is creative, on brand and resonates well with our audience. Fantastic work."</p>
+                                                <h6 class="text-center"><b>Aro Sanuel Alca <br> EXCEL Chairman</b></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 anm_mod fast">
+                                        <div class="card mb-3">
+                                            <div class="card-icon">
+                                                <img class="client_pic" src="img/feedback_2.jpg" alt="">
+                                            </div>
+                                            <div class="card-text">
+                                                <p style="font-size: small;">"James created a logo for our brand that perfectly captures our identity. The process was smooth and the final design was beyond what we imagined. His works give value to our business."</p>
+                                                <h6 class="text-center"><b>Jerome Juta <br> Anchors Dream Supervisor</b></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 anm_mod fast">
+                                        <div class="card mb-3">
+                                            <div class="card-icon">
+                                                <img class="client_pic" src="img/feedback_3.jpg" alt="">
+                                            </div>
+                                            <div class="card-text">
+                                                <p style="font-size: small;">"The print materials designed by James have significantly improved our marketing efforts. The brochures and flyers are professional, eye catching and perfectly aligned with our brand."</p>
+                                                <h6 class="text-center"><b>Lanie Alcantara <br> Bagwis Adviser</b></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+    
+                            <!-- why hire me? -->
+                            <div class="row" style="margin: 50px 0;">
+                                <div class="col-md-6 anm_mod fast">
+                                    <div>
+
+                                        <!-- #f0fbff
+                                        #03aefe
+
+                                        #f5f5ff
+                                        #3d5afe
+
+                                        #f1fef7
+                                        #1bcd78
+
+                                        #fffbf2
+                                        #fec300 -->
+                    
+                                        <h2 class="title text-center">Professional Skills</h2>
+                                        <div class="card-grid">
+                                            <div class="d-flex p-3 align-items-center justify-content-center text-center" style="background-color:#f0fbff; border-radius:10px;">
+                                                <div>
+                                                    <div class="card-icon shadow-sm" style="background-color: white;">
+                                                        <i class="bi bi-person-fill-check" style="color:#03aefe;"></i> 
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Professional<br>Teamwork</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="d-flex p-3 align-items-center justify-content-center text-center" style="background-color:#f5f5ff; border-radius:10px;">
+                                                <div>
+                                                    <div class="card-icon shadow-sm" style="background-color: white;">
+                                                        <i class="bi bi-check-square-fill" style="color:#3d5afe"></i>
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Quality and <br> Goal Oriented</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="d-flex p-3 align-items-center justify-content-center text-center" style="background-color:#f1fef7; border-radius:10px;">
+                                                <div>
+                                                    <div class="card-icon shadow-sm" style="background-color: white;">
+                                                        <i class="bi bi-clock-fill" style="color:#1bcd78"></i>    
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Time <br> Management</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="d-flex p-3 align-items-center justify-content-center text-center" style="background-color:#fffbf2; border-radius:10px;">
+                                                <div>
+                                                    <div class="card-icon shadow-sm" style="background-color: white;">
+                                                        <i class="bi bi-heart-fill" style="color:#fec300"></i>
+                                                    </div>
+                                                    <div class="card-text">
+                                                        <p>Passionate <br> and Hardworking</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                    
+                                <div class="col-md-6 anm_mod fast" >
+                                    
                                    
-                                </div>
-
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/html.png" alt="">
-                                    <img style="width: 50px; height: 50px;" src="img/css.png" alt="">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/js.png" alt="">
-                                    <img style="width: 50px; height: 50px; object-fit: cover;" src="img/bootstrap.png" alt="">
-                                   
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
-
-
-                        <!-- feedback -->
-                        <div class="" style="display: grid; place-items: center; margin-top: 50px;">
-
-                            <div class="anm_mod fast">
-                                <h2 class="title" style="text-align: center;"> <span style="color: var(--primary-color);">Feedback</span>  from Clients</h2>
-                                <p class="text-center anm_mod full fast">Hear what my satisfied clients have to say about the exceptional quality and creativity in my design projects</p>
-                            </div>
-
-                            
-                            
-                            <div class="row">
-                                <div class="col-md-4 anm_mod fast">
-                                    <div class="card mb-3">
-                                        <div class=""></div>
-                                        <div class="card-icon">
-                                            <img class="client_pic" src="img/feedback_1.jpg" alt="">
-                                        </div>
-                                        <div class="card-text">
-                                            <p style="font-size: small;">"The social media graphics James designed have increase our engagement and brand visibility. Each post is creative, on brand and resonates well with our audience. Fantastic work."</p>
-                                            <h6 class="text-center"><b>Aro Sanuel Alca <br> EXCEL Chairman</b></h6>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-12" style="text-align: left;">
+            
+                                            
+                                            <h2 class="title mt-5"> Why  <span style="color: var(--primary-color);">Hire Me?</span></h2>
+                                            <p>When I am designing, I establish connections and communication with the clients and determine what are their specific goals or desired design for the project, I plan, research, and brainstorm for information and add it to my concept then sketch up the ideas and turn them into an interesting creative visual design. I make sure that my design is compelling enough by getting feedback from teammates and others and I polish my work before submitting the project. I make sure that I submit my work to the clients on time.</p>
+    
+                                            <a class="view_folio_btn btn btn-sm" href="lets_talk.html">Send Message <i class="bi bi-arrow-right"></i></a>
+                                            
+                                            
+            
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4 anm_mod fast">
-                                    <div class="card mb-3">
-                                        <div class="card-icon">
-                                            <img class="client_pic" src="img/feedback_2.jpg" alt="">
-                                        </div>
-                                        <div class="card-text">
-                                            <p style="font-size: small;">"James created a logo for our brand that perfectly captures our identity. The process was smooth and the final design was beyond what we imagined. His works give value to our business."</p>
-                                            <h6 class="text-center"><b>Jerome Juta <br> Anchors Dream Supervisor</b></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 anm_mod fast">
-                                    <div class="card mb-3">
-                                        <div class="card-icon">
-                                            <img class="client_pic" src="img/feedback_3.jpg" alt="">
-                                        </div>
-                                        <div class="card-text">
-                                            <p style="font-size: small;">"The print materials designed by James have significantly improved our marketing efforts. The brochures and flyers are professional, eye catching and perfectly aligned with our brand."</p>
-                                            <h6 class="text-center"><b>Lanie Alcantara <br> Bagwis Adviser</b></h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <!-- why hire me? -->
-                        <div class="row" style="margin: 50px 0;">
-                            <div class="col-md-6 anm_mod fast">
-                                <div>
-                
-                                    <h2 class="title"><span style="color: var(--primary-color);">Professional</span>  Skills</b></h2>
-                                    <div class="card-grid">
-                                        <div class="card">
-                                            <div class="card-icon">
-                                                <i class="bi bi-person-fill-check"></i> 
-                                            </div>
-                                            <div class="card-text">
-                                                <p>Professional <br> Teamwork</p>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-icon">
-                                                <i class="bi bi-check2-square"></i> 
-                                            </div>
-                                            <div class="card-text">
-                                                <p>Quality and <br> Goal Oriented</p>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-icon">
-                                                <i class="bi bi-clock-history"></i> 
-                                            </div>
-                                            <div class="card-text">
-                                                <p>Time <br> Management</p>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-icon">
-                                                <i class="bi bi-heart"></i>
-                                            </div>
-                                            <div class="card-text">
-                                                <p>Passionate and Hardworking</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                </div>
-                            </div>
-                
-                            <div class="col-md-6 anm_mod fast" >
-                                
-                               
-                                <div class="row justify-content-center">
-                                    <div class="col-md-12" style="text-align: left;">
-        
-                                        
-                                        <h2 class="title mt-5"> Why  <span style="color: var(--primary-color);">Hire Me?</span></h2>
-                                        <p>When I am designing, I establish connections and communication with the clients and determine what are their specific goals or desired design for the project, I plan, research, and brainstorm for information and add it to my concept then sketch up the ideas and turn them into an interesting creative visual design. I make sure that my design is compelling enough by getting feedback from teammates and others and I polish my work before submitting the project. I make sure that I submit my work to the clients on time.</p>
-
-                                        <a class="view_folio_btn btn btn-sm" href="lets_talk.html">Send Message <i class="bi bi-arrow-right"></i></a>
-                                        
-                                        
-        
-                                    </div>
+                                    
+                                    
                                 </div>
                                 
-                                
                             </div>
-                            
-                        </div>
-
+    
+                        
+                       
                     </div>
 
                 </div>
@@ -466,44 +553,16 @@
         </div>
     </div>
 
-    <!-- <footer class="footer base-footer p-6 sticky-footer" style="background-color:#424242;">
-        <div class="container" style="margin: 0 50px; color: #fff;">
-            <div class="row " style="text-align: left;">
-                <div class="col-md-3 mb-3 mb-md-0">
-                    <h6 style="color: #fff;"><b>Together, let's create something truly remarkable!</b></h6>
-                    <p style="font-size: smaller; color: #fff;">Let's connect to discuss how my experience and passion for design can contribute to your business success.</p>
-                </div>
 
-                <div class="col-md-3 mb-md-0 text-center">
-                    <h5 class="text-white">Contact Us</h5>
-                    <p class="mb-0 text-white">Email: <a class="text-white" href="mailto:03jamesjuta0617@gmail.com">03jamesjuta0617@gmail.com</a></p>
-                    <p class="mb-0 text-white">Phone: <a class="text-white" href="tel:+639067265342">+639067265342</a></p>
-                </div>
-                <div class="col-md-3 mb-3 mb-md-0" style="text-align: center;">
-                    <h5 class="text-white">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a class="text-white" href="#">Home</a></li>
-                        <li><a class="text-white" href="#">Portfolio</a></li>
-                        <li><a class="text-white" href="#">Abouts</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 text-center" >
-                    <h5 class="text-white">Follow Us</h5>
-                    <div class="social-icons">
-                        <a href="#" class="bi bi-facebook text-white" aria-label="Facebook"></a>
-                        <a href="#" class="bi bi-twitter text-white" aria-label="Twitter"></a>
-                        <a href="#" class="bi bi-linkedin text-white" aria-label="LinkedIn"></a>
-                        <a href="#" class="bi bi-instagram text-white" aria-label="Instagram"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-12">
-                    <p class="mb-0 text-white">&copy; 2024 All rights reserved by JJ Designs.</p>
-                </div>
-            </div>
-        </div>
-    </footer> -->
+   
+
+   
+
+   
+
+   
+
+    
 
     <!-- JS code -->
     <script>
@@ -546,6 +605,29 @@
             return false;
             });
         });
+    </script>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuIcon = document.querySelector('.menu-icon');
+        const overlay = document.querySelector('.overlay');
+
+        menuToggle.addEventListener('change', () => {
+            if (menuToggle.checked) {
+                menuIcon.innerHTML = '&times;'; // Change to X icon
+                document.querySelector('.sidebar').style.left = '0'; // Show sidebar
+            } else {
+                menuIcon.innerHTML = '&#9776;'; // Change back to hamburger menu
+                document.querySelector('.sidebar').style.left = '-250px'; // Hide sidebar
+            }
+        });
+
+        overlay.addEventListener('click', () => {
+            menuToggle.checked = false;
+            menuIcon.innerHTML = '&#9776;';
+            document.querySelector('.sidebar').style.left = '-250px';
+        });
+
     </script>
 
 

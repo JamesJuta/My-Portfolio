@@ -31,43 +31,61 @@
     </head>
 <body style="background-color: #f3f7ff;">
 
-    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm p-1 pe-2 ps-2" >
-        <div class="container-fluid">
+    <nav class="navbar shadow-sm sticky-top">
+        <div class="logo">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="img/blue_logo.png" alt="" height="50" class="d-inline-block align-text-top p-1">
+                <img src="img/blue_logo.png" alt="" height="45" class="d-inline-block align-text-top p-1">
                 <span class="navbar-brand mb-0 h6 p-0"><b style="color: var(--text-color);">JJ Designs</b></span>
             </a>
-            <button class="navbar-toggler collapsed btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="toggler-icon top-bar"></span>
-                <span class="toggler-icon middle-bar"></span>
-                <span class="toggler-icon bottom-bar"></span>
-            </button>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="nav-links">
+            <ul class="navbar-nav nav-underline mb-2 mb-lg-0 d-flex justify-content-between">
+                <div class="navlink-container d-flex justify-content-around"  style="width: 200px; position: relative; right: 20px;">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" > Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html"> Portfolio</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="abouts.html" > Abouts</a>
+                    </li>
+
+                </div>
+            </ul>
+        </div>
+        <!-- <button class="cta-btn">Sign Up</button> -->
+        <a class="btn cta-btn" style="width: 150px;" href="lets_talk.html">Let's talk <i class="bi bi-arrow-right"></i></a>
+
+        <div class="sidebar">
+
+            <ul class="navbar-nav nav-underline mb-2 mb-lg-0 d-flex justify-content-between">
+                <div class="navlink-container"  style="width: 200px; position: relative; right: 20px;">
     
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-underline mb-2 mb-lg-0 d-flex justify-content-between" style="width: 75%;">
-                    <div class="navlink-container">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" > Home</a>
+                    </li>
     
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html" > Home</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html"> Portfolio</a>
+                    </li>
     
-                        <li class="nav-item">
-                            <a class="nav-link active" href="portfolio.html"> Portfolio</a>
-                        </li>
     
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="services.html"> Services</a>
-                        </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="abouts.html" > Abouts</a>
+                    </li>
     
-                        <li class="nav-item">
-                            <a class="nav-link" href="abouts.html" > Abouts</a>
-                        </li>
+                </div>
+                
     
-                    </div>
-                    
-                    <a class="btn" style="width: 150px;" href="lets_talk.html">Let's talk <i class="bi bi-arrow-right"></i></a>
-                </ul>
-            </div>
+            </ul>
+            <a class="btn" style="width: 100%; color: var(--primary-color);" href="lets_talk.html">Let's talk <i class="bi bi-arrow-right"></i></a>
         </div>
     </nav>
 

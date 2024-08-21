@@ -469,6 +469,11 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 150px;
 }
 
+.glass_blur{
+    background-color: #ffffff1a;
+    backdrop-filter: blur(16px) saturate(120%);
+}
+
 
 
 
@@ -718,6 +723,114 @@ p, h1, h2, h3, h4, h5, h6 {
     }
 
 
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        padding: 10px 70px;
+        background-color: white;
+        color: var(--text-color);
+    }
+    
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .nav-links a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    .cta-btn {
+        padding: 8px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+    
+    .cta-btn:hover {
+        background-color: #0056b3;
+    }
+    
+    .menu-icon {
+        display: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    .sidebar {
+        position: fixed;
+        top: 70px;
+        left: -250px;
+        height: 100%;
+        width: 250px;
+        background-color: #ffffff1a;
+        backdrop-filter: blur(16px) saturate(120%);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: left 0.5s ease-in-out;
+        z-index: 99;
+    }
+    
+    .sidebar a {
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .sidebar .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 28px;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    #menu-toggle:checked ~ .sidebar {
+        right: 0;
+    }
+    
+    #menu-toggle:checked ~ .overlay {
+        display: block;
+    }
+    
+    #menu-toggle:checked + .menu-icon {
+        content: "\2715"; /* Unicode for X */
+        font-size: 28px;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        transition: display 0.3s ease-in-out;
+        z-index: 5000;
+    }
+
+
 /* =========================================== Responsive =========================================== */
 @media (max-width: 1200px) {
     .hero-title {
@@ -750,9 +863,24 @@ p, h1, h2, h3, h4, h5, h6 {
     .custom_margin{
         margin:0 15px 15px 15px;
     }
-    .navbar{
+    /* .navbar{
         padding-left: 0;
         padding-right: 0;
+    } */
+
+    .nav-links {
+        display: none;
+    }
+
+    .cta-btn {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .navbar{
+        padding: 10px 40px;
     }
 }
 
@@ -772,6 +900,9 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     .folio_title{
         font-size: 35px;
+    }
+    .navbar{
+        padding: 10px 20px;
     }
 
 }
@@ -799,6 +930,9 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     .view_folio_btn{
         width: 100%;
+    }
+    .menu-icon {
+        display: none;
     }
 }
 /* ================ */
@@ -840,8 +974,8 @@ p, h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 70px;
-    background-color: #f3f7ff;;
+    height: 80px;
+    background-color: white;
     justify-content: space-around;
     align-items: center;
     z-index: 999;
@@ -861,7 +995,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .bottom-link .icon-services,
 .bottom-link .icon-contact {
     /* Add your icon styles here */
-    font-size: 24px; /* Adjust icon size */
+    font-size: 20px; /* Adjust icon size */
 }
 
 /* Media Query for Responsive Design */
@@ -885,15 +1019,45 @@ p, h1, h2, h3, h4, h5, h6 {
 
     .bottom-link:hover {
         color: var(--primary-color);
+        background-color: white;
     }
 
     .bottom-link.active {
         color: var(--primary-color);
+        /* background-color: white;
+        padding: 5px;
+        border-radius: 15px;
+        width: 100px; */
     }
     #button{
         bottom: 80px;
     }
+   
 }
 
 
 
+
+
+
+
+
+
+
+
+/* @media (max-width: 992px) {
+    .nav-links {
+        display: none;
+    }
+
+    .cta-btn {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .navbar{
+        padding: 10px 20px;
+    }
+} */
