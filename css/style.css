@@ -832,3 +832,68 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 
+/* Bottom Bar Styles */
+.bottom-nav-bar {
+    display: none; /* Hidden by default */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: #f3f7ff;;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    padding: 25px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.bottom-link {
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+.bottom-link .icon-home,
+.bottom-link .icon-about,
+.bottom-link .icon-services,
+.bottom-link .icon-contact {
+    /* Add your icon styles here */
+    font-size: 24px; /* Adjust icon size */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 576px) {
+    .nav-links {
+        display: none; /* Hide top nav links in mobile */
+    }
+
+    .bottom-nav-bar {
+        display: flex; /* Show bottom bar in mobile */
+    }
+
+    .sidebar {
+        display: none; /* Hide sidebar in mobile */
+    }
+
+    /* Add smooth transition effect */
+    .bottom-link {
+        transition: background-color 0.5s ease;
+    }
+
+    .bottom-link:hover {
+        color: var(--primary-color);
+    }
+
+    .bottom-link.active {
+        color: var(--primary-color);
+    }
+    #button{
+        bottom: 80px;
+    }
+}
+
+
+
