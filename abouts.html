@@ -25,10 +25,16 @@
         <!-- bootsrap icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <!-- <link rel="stylesheet" href="{{ url_for('static', filename = 'css/bootstrap-icons.min.css') }}"> -->
+
+         <!-- Read More function -->
+        <script>
+            function toggleDisplay(d,b){var c=document.getElementById(d);if(c.style.display=="block"){c.style.display="none";if(b){b.innerHTML="Read more..."}}else{c.style.display="block";if(b){b.innerHTML="Show less..."}}};
+        </script>
          
     
         <title>JJ Designs</title>
     </head>
+
 <body style="background-color: #f3f7ff;">
 
     <nav class="navbar shadow-sm sticky-top">
@@ -121,31 +127,26 @@
     <a id="button" class="shadow"><i class="bi bi-arrow-up"></i></a>
 
     <!-- Portfolio -->
-    <div class="container">
+    <div class="container animation">
         <div class="row" style="padding: 20px 0;">
             <div class="col-12">
                 <div class="bg-white shadow-sm" style="border-radius: 10px;">
 
                     <div class="custom_margin pb-4" style="display: grid; place-items: center;">
 
-                        <h2 class="title" style="text-align: center; font-size: 40px; padding-top: 50px;"> <b class="gradient-text">About us</b></h2>
+                        <h2 class="title pt-4" style="text-align: center; font-size: 40px;"> <b class="gradient-text">About us</b></h2>
                         <p class="text-center">Find out more about me and my graphic designing journey </p>
-
-                        <!-- <div class="card" style="width: 100%; height: 500px; ">
-                            
-                        </div> -->
                         
-                        <div class="row d-flex flex-column flex-md-row align-items-center justify-content-between w-100 mb-4">
-                            <div class="col-md-6 p-2" style="height: 380px;">
-                                <img src="img/IMG_0607.JPG" alt="" style="object-fit: cover; width: 100%; border-radius: 10px;">
+                        <div class="d-flex flex-column flex-md-row justify-content-between w-100 mb-0" style="gap: 10px;">
+                            <div class="col-md-6 p-0" style="height: 380px;">
+                                <img src="img/IMG_0607.JPG" alt="" style="object-fit: cover; width: 100%; height: 360px; border-radius: 10px;">
                             </div>
     
-    
-                            <div class="col-md-6 p-4">
-                                <h2 class="title">Learn About <span style="color: var(--primary-color);"> My Artistic Background</span></h2>
+                            <div class="col-md-6 mt-2 p-2 pt-0 mb-0">
+                                <h2 class="title">Learn About <span class="text_primary"> My Artistic Background</span></h2>
                                 <h6>"Behind the Scenes: My Journey in Art and Design"</h6>
-                                <p class="text-muted">I am a graphic designer with over two years of experience in the field of graphic design. When I was in high school, I was a member of the campus journalism club, where my role  was to design newspapers to be used for division and regional competitions. I have been training and being exposed to design for almost 7 years with graphic design tools, mainly Adobe Photoshop and Indesign, that have become a stepping stone for me as a graphic designer. Later, when I became more passionate about design, I practiced and studied more design tools and principles to improve my graphic design skills and give more value to the clients that trust me. Furthermore, I first became a freelancer when my brother was establishing his business, a mobile coffee shop, where I made all the related graphics needed for the business.</p>
-                                <button type="button" class="btn btn-sm" style="width: 150px;">View Portfolio</button>
+                                <p>I am a graphic designer with over two years of experience in the field of graphic design. When I was in high school, I was a member of the campus journalism club, where my role  was to design newspapers to be used for division and regional competitions. I have been training and being exposed to design for almost 7 years with graphic design tools, mainly Adobe Photoshop and Indesign, that have become a stepping stone for me as a graphic designer.  <span class="elaboration" id="elaboration_1" style="display: none;"><br>Later, when I became more passionate about design, I practiced and studied more design tools and principles to improve my graphic design skills and give more value to the clients that trust me. Furthermore, I first became a freelancer when my brother was establishing his business, a mobile coffee shop, where I made all the related graphics needed for the business. </p>
+                                <button type="button" class="view_folio_btn btn btn-sm" onclick="toggleDisplay('elaboration_1',this)">Read more...</button>
                             </div>
     
                             
@@ -470,6 +471,8 @@
             });
         });
     </script>
+
+   
 
 
 
