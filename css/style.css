@@ -7,8 +7,8 @@
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
-    --primary-color: #1A73E8;
-    /* --primary-color: #27227e; */
+    /* --primary-color: #1A73E8; */
+    --primary-color: #03aefe;
     /* --primary-color: linear-gradient(to right, #3dcaf5, #27227e); */
     --primary-color-light: #F6F5FF;
     --secondary-color: #2f2f41;
@@ -294,7 +294,7 @@ p, h1, h2, h3, h4, h5, h6 {
     color: #6c757d;
 }
 .footer a {
-    color: #007bff;
+    color: var(--primary-color);
     text-decoration: none;
 }
 .footer a:hover {
@@ -459,6 +459,10 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 5px;
 }
 
+.hero_social_icon:hover{
+    color: var(--primary-color)
+}
+
 .folio_image{
     object-fit: cover; 
     width: 100%; 
@@ -472,6 +476,13 @@ p, h1, h2, h3, h4, h5, h6 {
 .glass_blur{
     background-color: #ffffff1a;
     backdrop-filter: blur(16px) saturate(120%);
+}
+
+.text_primary{
+    color: var(--primary-color);
+}
+.border_red{
+    border: 1px solid red;
 }
 
 
@@ -652,7 +663,8 @@ p, h1, h2, h3, h4, h5, h6 {
     .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
     .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
     .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
-    .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+    .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6),
+    .tabset > input:nth-child(13):checked ~ .tab-panels > .tab-panel:nth-child(7) {
         display: block; /* Show the selected tab panel */
         opacity: 1; /* Fade in */
     }
@@ -698,7 +710,7 @@ p, h1, h2, h3, h4, h5, h6 {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
+        text-fill-color: transparent; 
     }
     
     .tabset > label:hover::after,
@@ -750,8 +762,8 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     
     .cta-btn {
-        padding: 8px;
-        background-color: #007bff;
+        padding: 6px;
+        background-color: var(--primary-color);
         color: #fff;
         border: none;
         cursor: pointer;
@@ -936,6 +948,12 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     .tabset{
         text-align: left;
+    }
+    .list-unstyled{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
     }
 }
 /* ================ */
