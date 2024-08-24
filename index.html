@@ -8,7 +8,6 @@
         <link rel="shortcut icon" href="img/logo.png">
     
         <!--  -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" type="text/css">
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
@@ -19,12 +18,10 @@
         <!-- custom styling -->
         <link rel="stylesheet" href="css/style.css">
     
-        <script src="js/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
         <!-- bootsrap icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <!-- <link rel="stylesheet" href="{{ url_for('static', filename = 'css/bootstrap-icons.min.css') }}"> -->
          
     
         <title>JJ Designs</title>
@@ -107,25 +104,30 @@
 
             <ul class="navbar-nav nav-underline mb-2 mb-lg-0 d-flex justify-content-between">
                 <div class="navlink-container"  style="width: 200px; position: relative; right: 20px;">
-    
+                    <p> Navigation</p>
+
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html" > Home</a>
+                        <a class="nav-link active" href="index.html"><i class="bi bi-house-fill"></i> Home</a>
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html"> Portfolio</a>
+                        <a class="nav-link" href="portfolio.html"><i class="bi bi-images"></i> Portfolio</a>
                     </li>
     
     
                     <li class="nav-item">
-                        <a class="nav-link" href="abouts.html" > Abouts</a>
+                        <a class="nav-link" href="abouts.html"><i class="bi bi-person-lines-fill"></i> Abouts</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="lets_talk.html"><i class="bi bi-chat-text-fill"></i> Let's talk</a>
                     </li>
     
                 </div>
                 
     
             </ul>
-            <a class="btn" style="width: 100%; color: var(--primary-color);" href="lets_talk.html">Let's talk <i class="bi bi-arrow-right"></i></a>
+    
         </div>
     </nav>
 
@@ -596,83 +598,8 @@
     </div>
 
 
-   
-
-   
-
-   
-
-   
-
-    
-
     <!-- JS code -->
-    <script>
-        var btn = $('#button');
-
-        $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
-            btn.addClass('show');
-        } else {
-            btn.removeClass('show');
-        }
-        });
-
-        btn.on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({scrollTop:0}, '300');
-        });
-
-        $(window).scroll(function() {
-            $(".animation .anm_mod").each(function() {
-            const position = $(this).offset().top;
-            const scroll = $(window).scrollTop();
-            const windowHeight = $(window).height();
-            if (scroll > position - windowHeight) {
-            $(this).addClass("active");
-            }
-            if (scroll < 100) {
-            $(this).removeClass("active");
-            }
-            });
-            });
-
-            $(function() {
-            $('a[href^="#"]').click(function() {
-            const speed = 800;
-            const href = $(this).attr("href");
-            const target = $(href == "#" || href == "" ? "html" : href);
-            const position = target.offset().top;
-            $("html, body").animate({ scrollTop: position }, speed, "swing");
-            return false;
-            });
-        });
-    </script>
-
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const menuIcon = document.querySelector('.menu-icon');
-        const overlay = document.querySelector('.overlay');
-
-        menuToggle.addEventListener('change', () => {
-            if (menuToggle.checked) {
-                menuIcon.innerHTML = '&times;'; // Change to X icon
-                document.querySelector('.sidebar').style.right = '0'; // Show sidebar
-            } else {
-                menuIcon.innerHTML = '&#9776;'; // Change back to hamburger menu
-                document.querySelector('.sidebar').style.right = '-250px'; // Hide sidebar
-            }
-        });
-
-        overlay.addEventListener('click', () => {
-            menuToggle.checked = false;
-            menuIcon.innerHTML = '&#9776;';
-            document.querySelector('.sidebar').style.right = '-250px';
-        });
-
-    </script>
-
-
+    <script defer src="js/script.js"></script>
 
 </body>
 </html>

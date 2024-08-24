@@ -827,7 +827,8 @@ p, h1, h2, h3, h4, h5, h6 {
     
     #menu-toggle:checked + .menu-icon {
         content: "\2715"; /* Unicode for X */
-        font-size: 28px;
+        font-size: 25px;
+        margin-right: 3px;
     }
     
     .overlay {
