@@ -124,7 +124,7 @@
     <div class="container animation">
         <div class="row" style="padding: 20px 0;">
             <div class="col-12">
-                <div class="bg-white shadow-sm" style="border-radius: 10px;">
+                <div class="bg-white shadow-sm" style="border-radius: 20px;">
 
                     <div class="custom_margin" style=" padding-top: 50px; display: grid; place-items: center;">
 
@@ -472,14 +472,14 @@
                 title: 'Dog Shampoo Raspberry Scent'
             },
             {
-                imgSrc: 'img/Sweatshirt_Mockup_v01.jpg',
+                imgSrc: 'img/markmanship.jpg',
                 category: 'Product Design',
                 title: 'Markmanship Shirt Design'
             },
             {
-                imgSrc: 'img/Sweatshirt_Mockup_v02.jpg',
+                imgSrc: 'img/rizalites.jpg',
                 category: 'Product Design',
-                title: 'Markmanship Shirt Design'
+                title: 'Rizalites Polo Shirt Design'
             },
             {
                 imgSrc: 'img/shirt_design.jpg',
@@ -542,7 +542,7 @@
             card.className = index < 3 ? 'col-md-4' : 'col-md-4 anm_mod fast';
 
             card.innerHTML = `
-                <div class="card mb-3 p-0">
+                <div class="card mb-3 p-0" style="border:none;">
                     <div class="image-container position-relative">
                         <img class="folio_image" src="${item.imgSrc}" alt="" style="width: 100%;">
                         <button class="view-button" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="${item.imgSrc}">
@@ -551,7 +551,7 @@
                     </div>
                     <div class="card-text" style="height: fit-content;">
                         <p class="pt-2 mb-0 portfolio_card_text">${item.category}</p>
-                        <h5 class="p-0 portfolio_card_text"><b>${item.title}</b></h5>
+                        <h6 class="p-0 portfolio_card_text"><b>${item.title}</b></h6>
                     </div>
                 </div>
             `;
@@ -582,22 +582,22 @@
         const productDesignContainer = document.getElementById('product-design-container');
         const logoContainer = document.getElementById('logo-container');
 
-        // Loop through the illustrationItems array and create cards
+        // Loop through the showAllItems array and create cards
         showAllItems.forEach((item, index) => {
             addPortfolioItem(showAllContainer, item, index);
         });
 
-        // Loop through the illustrationItems array and create cards
+        // Loop through the printDesignItems array and create cards
         printDesignItems.forEach((item, index) => {
             addPortfolioItem(printDesignContainer, item, index);
         });
 
-        // Loop through the illustrationItems array and create cards
+        // Loop through the socialMediaItems array and create cards
         socialMediaItems.forEach((item, index) => {
             addPortfolioItem(socialMediaContainer, item, index);
         });
 
-        // Loop through the illustrationItems array and create cards
+        // Loop through the uiDesignItems array and create cards
         uiDesignItems.forEach((item, index) => {
             addPortfolioItem(uiDesignContainer, item, index);
         });
@@ -607,7 +607,7 @@
             addPortfolioItem(illustrationContainer, item, index);
         });
 
-        // Loop through the logoItems array and create cards
+        // Loop through the productDesignItems array and create cards
         productDesignItems.forEach((item, index) => {
             addPortfolioItem(productDesignContainer, item, index);
         });
