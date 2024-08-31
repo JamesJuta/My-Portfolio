@@ -258,11 +258,13 @@
     </div>
 
     <!-- Bootstrap Modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="border-radius: 15px;">
-                <div class="modal-body p-0 shadow" >
-                    <img id="modalImage" src="" alt="" class="img-fluid" style="border-radius: 10px;">
+    <div class="modal fade" id="mediaModal" tabindex="-1" aria-labelledby="mediaModalLabel" aria-hidden="true">
+        <div id="modalDialog" class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 15px; background-color: transparent;">
+                <div class="modal-body p-0 shadow">
+                    <div id="mediaContent" style="border-radius: 10px;">
+                        <!-- Media (image/video/carousel) will be injected here -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -274,66 +276,101 @@
     <script defer src="js/script.js"></script>
 
     <script>
-        // Portfolio data array
-
         const printDesignItems = [
             {
-                imgSrc: 'img/bagwis_mockup_1.jpg',
+                mediaType: 'link',
+                mediaSrc: 'https://drive.google.com/file/d/1Q2KaRZmJt-wJ7ZVFvm5872tnNsR1Lfxv/view?usp=drive_link',
+                thumbnailSrc: 'img/bagwis_mockup_1.jpg',
                 category: 'Print Design',
                 title: 'Bagwis Vol 3 Issue 1'
             },
             {
-                imgSrc: 'img/lagaslas_mockup_3.jpg',
+                mediaType: 'link',
+                mediaSrc: 'https://drive.google.com/file/d/1iImc6QMk80IQ1KWg5VfxxWE2gqV_AYJ3/view?usp=drive_link',
+                thumbnailSrc: 'img/lagaslas_mockup_3.jpg',
                 category: 'Print Design',
                 title: 'Ang Lagaslas Vol 14 Issue 1'
             },
             {
-                imgSrc: 'img/289.jpg',
+                mediaType: 'link',
+                mediaSrc: 'https://drive.google.com/file/d/1T9lBRjLPfeBy4m8iyyndVYgy55H-H72f/view?usp=drive_link',
+                thumbnailSrc: 'img/289.jpg',
                 category: 'Print Design',
                 title: 'Ang Lagaslas Vol 13 Issue 1'
             },
             {
-                imgSrc: 'img/al4.jpg',
+                mediaType: 'link',
+                mediaSrc: 'https://drive.google.com/file/d/19u-g_EQlRbpgWALgihfjzm0yO4tEzBIA/view?usp=drive_link',
+                thumbnailSrc: 'img/al4.jpg',
                 category: 'Print Design',
                 title: 'Ang Lagaslas Vol 12 Issue 1'
             },
             {
-                imgSrc: 'img/al2.jpg',
+                mediaType: 'link',
+                mediaSrc: 'https://drive.google.com/file/d/1_Ud4Zj2G_LXB0Q_1yvF4dqxyLUbm0-O-/view?usp=drive_link',
+                thumbnailSrc: 'img/al2.jpg',
                 category: 'Print Design',
                 title: 'Ang Lagaslas Vol 11 Issue 1'
             },
             {
-                imgSrc: 'img/ang_lagaslas_vo3_issue1.jpg',
+                mediaType: 'link',
+                mediaSrc: 'https://drive.google.com/file/d/1t_-ioqs-QKxZCTHQXnWo86Ue1_6LSZe8/view?usp=drive_link',
+                thumbnailSrc: 'img/ang_lagaslas_vo3_issue1.jpg',
                 category: 'Print Design',
                 title: 'Ang Lagaslas Vol 3 Issue 1'
             },
             {
-                imgSrc: 'img/Nature_of_listening.jpg',
+                mediaType: 'carousel',
+                mediaSrc: [
+                    'img/Nature_of_listening.jpg',
+                    'img/Nature_of_listening_1.jpg',
+                    'img/Nature_of_listening_2.jpg',
+                    'img/Nature_of_listening_3.jpg'
+                ],
+                thumbnailSrc: 'img/Nature_of_listening.jpg',
                 category: 'Print Design',
                 title: 'Nature of Listening'
             },
             {
-                imgSrc: 'img/Pork_tofu_sisig.jpg',
+                mediaType: 'carousel',
+                mediaSrc: [
+                    'img/Pork_tofu_sisig.jpg',
+                    'img/Pork_tofu_sisig_1.jpg',
+                    'img/Pork_tofu_sisig_2.jpg',
+                    'img/Pork_tofu_sisig_3.jpg'
+                ],
+                thumbnailSrc: 'img/Pork_tofu_sisig.jpg',
                 category: 'Print Design',
                 title: 'Pork Tofu Sisig'
             },
             {
-                imgSrc: 'img/dozeeye_manual_mockup.jpg',
+                mediaType: 'link',
+                mediaSrc: 'https://drive.google.com/file/d/1nSPLhcdRPGcBSDe0dlQwYbUY8Ru6gn4n/view?usp=sharing',
+                thumbnailSrc: 'img/dozeeye_manual_mockup.jpg',
                 category: 'Print Design',
                 title: 'DozeEye Manual'
             },
             {
-                imgSrc: 'img/excel_id.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/excel_id.jpg',
+                thumbnailSrc: 'img/excel_id.jpg',
                 category: 'Print Design',
                 title: 'EXCEL ID Design'
             },
             {
-                imgSrc: 'img/card_design.jpg',
+                mediaType: 'carousel',
+                mediaSrc: [
+                    'img/card_design.jpg',
+                    'img/card_design_1.jpg'
+                ],
+                thumbnailSrc: 'img/card_design.jpg',
                 category: 'Print Design',
                 title: 'Card Design'
             },
             {
-                imgSrc: 'img/anchors_mobile_cafe_menu.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/anchors_mobile_cafe_menu.jpg',
+                thumbnailSrc: 'img/anchors_mobile_cafe_menu.jpg',
                 category: 'Print Design',
                 title: 'Anchors Mobile Cafe Menu'
             }
@@ -341,115 +378,170 @@
 
         const socialMediaItems = [
             {
-                imgSrc: 'img/got_love_struck.gif',
+                mediaType: 'image', // type of media: image, video, or link
+                mediaSrc: 'img/got_love_struck.gif', // path to image, GIF treated as image here
+                thumbnailSrc: 'img/got_love_struck.gif', // thumbnail to display in the portfolio
                 category: 'Social Media',
                 title: 'Got Love Struck'
             },
             {
-                imgSrc: 'img/excel_odyssey.gif',
+                mediaType: 'carousel',
+                mediaSrc: [
+                    'img/excel_odyssey.gif',
+                    'img/excel_odyssey_2.jpg',
+                    'img/excel_odyssey_1.jpg',
+                    'img/excel_odyssey_3.jpg',
+                    'img/excel_odyssey_4.jpg',
+                    'img/excel_odyssey_5.jpg',
+                    'img/excel_odyssey_6.jpg'
+                ],
+                thumbnailSrc: 'img/excel_odyssey.gif',
                 category: 'Social Media',
                 title: 'Excel Odyssey'
             },
             {
-                imgSrc: 'img/adobe_animate.gif',
+                mediaType: 'image',
+                mediaSrc: 'img/adobe_animate.gif',
+                thumbnailSrc: 'img/adobe_animate.gif',
                 category: 'Social Media',
                 title: 'Adobe Animate'
             },
             {
-                imgSrc: 'img/Tree_Planting.gif',
+                mediaType: 'image',
+                mediaSrc: 'img/Tree_Planting.gif',
+                thumbnailSrc: 'img/Tree_Planting.gif',
                 category: 'Social Media',
                 title: 'CCC Tree Planting'
             },
             {
-                imgSrc: 'img/Mothers_day.gif',
+                mediaType: 'image',
+                mediaSrc: 'img/Mothers_day.gif',
+                thumbnailSrc: 'img/Mothers_day.gif',
                 category: 'Social Media',
                 title: 'Mother\'s Day Greeting'
             },
             {
-                imgSrc: 'img/ml_roster.gif',
+                mediaType: 'image',
+                mediaSrc: 'img/ml_roster.gif',
+                thumbnailSrc: 'img/ml_roster.gif',
                 category: 'Social Media',
-                title: 'Ml Tournament Roster'
+                title: 'ML Tournament Roster'
             },
             {
-                imgSrc: 'img/flag_raising.jpg',
+                mediaType: 'carousel',
+                mediaSrc: [
+                    'img/flag_raising.jpg',
+                    'img/flag_raising_1.jpg',
+                    'img/flag_raising_2.jpg',
+                    'img/flag_raising_3.jpg',
+                    'img/flag_raising_4.jpg',
+                    'img/flag_raising_5.jpg'
+                ],
+                thumbnailSrc: 'img/flag_raising.jpg',
                 category: 'Social Media',
                 title: 'Excel Flag Raising'
             },
             {
-                imgSrc: 'img/need_business_design.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/need_business_design.jpg',
+                thumbnailSrc: 'img/need_business_design.jpg',
                 category: 'Social Media',
                 title: 'Need A Business Design'
             },
             {
-                imgSrc: 'img/teachers_day.png',
+                mediaType: 'image',
+                mediaSrc: 'img/teachers_day.png',
+                thumbnailSrc: 'img/teachers_day.png',
                 category: 'Social Media',
-                title: 'Teacher\' Day'
+                title: 'Teacher\'s Day'
             }
         ];
 
-
         const uiDesignItems = [
             {
-                imgSrc: 'img/dozeeye_mobile.jpg',
+                mediaType: 'image', // type of media: image, video, or link
+                mediaSrc: 'img/dozeeye_mobile.jpg', // path to image
+                thumbnailSrc: 'img/dozeeye_mobile.jpg', // thumbnail to display in the portfolio
                 category: 'UI Design',
                 title: 'DozeEye Mobile App'
             },
             {
-                imgSrc: 'img/emonitoring.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/emonitoring.jpg',
+                thumbnailSrc: 'img/emonitoring.jpg',
                 category: 'UI Design',
                 title: 'E Monitoring System'
             },
             {
-                imgSrc: 'img/dci_connect.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/dci_connect.jpg',
+                thumbnailSrc: 'img/dci_connect.jpg',
                 category: 'UI Design',
                 title: 'DCI Connect'
             }
         ];
 
-
         const illustrationItems = [
             {
-                imgSrc: 'img/portrait 01.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/portrait 01.jpg',
+                thumbnailSrc: 'img/portrait 01.jpg',
                 category: 'Illustration',
                 title: 'Portrait 01'
             },
             {
-                imgSrc: 'img/portrait 02.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/portrait 02.jpg',
+                thumbnailSrc: 'img/portrait 02.jpg',
                 category: 'Illustration',
                 title: 'Portrait 02'
             },
             {
-                imgSrc: 'img/portrait 03.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/portrait 03.jpg',
+                thumbnailSrc: 'img/portrait 03.jpg',
                 category: 'Illustration',
                 title: 'Portrait 03'
             },
             {
-                imgSrc: 'img/portrait 04.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/portrait 04.jpg',
+                thumbnailSrc: 'img/portrait 04.jpg',
                 category: 'Illustration',
                 title: 'Portrait 04'
             },
             {
-                imgSrc: 'img/portrait 05.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/portrait 05.jpg',
+                thumbnailSrc: 'img/portrait 05.jpg',
                 category: 'Illustration',
                 title: 'Portrait 05'
             },
             {
-                imgSrc: 'img/portrait 06.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/portrait 06.jpg',
+                thumbnailSrc: 'img/portrait 06.jpg',
                 category: 'Illustration',
                 title: 'Portrait 06'
             },
             {
-                imgSrc: 'img/portrait 07.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/portrait 07.jpg',
+                thumbnailSrc: 'img/portrait 07.jpg',
                 category: 'Illustration',
                 title: 'Portrait 07'
             },
             {
-                imgSrc: 'img/portrait 08.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/portrait 08.jpg',
+                thumbnailSrc: 'img/portrait 08.jpg',
                 category: 'Illustration',
                 title: 'Portrait 08'
             },
             {
-                imgSrc: 'img/portrait 09.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/portrait 09.jpg',
+                thumbnailSrc: 'img/portrait 09.jpg',
                 category: 'Illustration',
                 title: 'Portrait 09'
             }
@@ -457,32 +549,48 @@
 
         const productDesignItems = [
             {
-                imgSrc: 'img/dog_shampoo_1.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/dog_shampoo_1.jpg',
+                thumbnailSrc: 'img/dog_shampoo_1.jpg',
                 category: 'Product Design',
                 title: 'Dog Shampoo Lavander Scent'
             },
             {
-                imgSrc: 'img/dog_shampoo_2.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/dog_shampoo_2.jpg',
+                thumbnailSrc: 'img/dog_shampoo_2.jpg',
                 category: 'Product Design',
                 title: 'Dog Shampoo Vanilla Scent'
             },
             {
-                imgSrc: 'img/dog_shampoo_3.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/dog_shampoo_3.jpg',
+                thumbnailSrc: 'img/dog_shampoo_3.jpg',
                 category: 'Product Design',
                 title: 'Dog Shampoo Raspberry Scent'
             },
             {
-                imgSrc: 'img/markmanship.jpg',
+                mediaType: 'carousel',
+                mediaSrc: [
+                    'img/markmanship.jpg',
+                    'img/markmanship_1.jpg',
+                    'img/markmanship_2.jpg'
+                ],
+                thumbnailSrc: 'img/markmanship.jpg',
                 category: 'Product Design',
                 title: 'Markmanship Shirt Design'
             },
             {
-                imgSrc: 'img/rizalites.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/rizalites.jpg',
+                thumbnailSrc: 'img/rizalites.jpg',
                 category: 'Product Design',
                 title: 'Rizalites Polo Shirt Design'
             },
             {
-                imgSrc: 'img/shirt_design.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/shirt_design.jpg',
+                thumbnailSrc: 'img/shirt_design.jpg',
                 category: 'Product Design',
                 title: 'Jaiga Shirt Design'
             }
@@ -490,39 +598,49 @@
 
         const logoItems = [
             {
-                imgSrc: 'img/anchors_1.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/anchors_1.jpg',
+                thumbnailSrc: 'img/anchors_1.jpg',
                 category: 'Logo',
                 title: 'Tipsy Anchors Mobile Bar'
             },
             {
-                imgSrc: 'img/anchors_2.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/anchors_2.jpg',
+                thumbnailSrc: 'img/anchors_2.jpg',
                 category: 'Logo',
                 title: 'Tipsy Anchors Foodtrip'
             },
             {
-                imgSrc: 'img/anchors_3.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/anchors_3.jpg',
+                thumbnailSrc: 'img/anchors_3.jpg',
                 category: 'Logo',
                 title: 'Tipsy Anchors Beer & Liquor'
             },
             {
-                imgSrc: 'img/jj_designs.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/jj_designs.jpg',
+                thumbnailSrc: 'img/jj_designs.jpg',
                 category: 'Logo',
                 title: 'JJ Designs'
             },
             {
-                imgSrc: 'img/DOZEEYE.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/DOZEEYE.jpg',
+                thumbnailSrc: 'img/DOZEEYE.jpg',
                 category: 'Logo',
                 title: 'DozeEye'
             },
             {
-                imgSrc: 'img/KAPETEROS.jpg',
+                mediaType: 'image',
+                mediaSrc: 'img/KAPETEROS.jpg',
+                thumbnailSrc: 'img/KAPETEROS.jpg',
                 category: 'Logo',
                 title: 'Kapeteros'
-            },
-            
-            // Add more portfolio items as needed
+            }
         ];
-        
+
         const showAllItems = [].concat(
             printDesignItems,
             socialMediaItems,
@@ -533,19 +651,51 @@
         );
 
 
-        // Function to create and append a card
+        // const printDesignItems = [
+        //     {
+        //         mediaType: 'image', 
+        //         mediaSrc: 'img/bagwis_mockup_1.jpg', 
+        //         thumbnailSrc: 'img/bagwis_mockup_1.jpg', 
+        //         category: 'Print Design',
+        //         title: 'Bagwis Vol 3 Issue 1'
+        //     },
+        //     {
+        //         mediaType: 'video',
+        //         mediaSrc: 'img/Job fair v4.mp4',
+        //         thumbnailSrc: 'img/bagwis_mockup_1.jpg',
+        //         category: 'Print Design',
+        //         title: 'Ang Lagaslas Vol 14 Issue 1'
+        //     },
+        //     {
+        //         mediaType: 'link',
+        //         mediaSrc: 'https://www.behance.net/gallery/123456789/Example-Project',
+        //         thumbnailSrc: 'img/bagwis_mockup_1.jpg',
+        //         category: 'Print Design',
+        //         title: 'Ang Lagaslas Vol 13 Issue 1'
+        //     },
+        //     {
+        //         mediaType: 'carousel',
+        //         mediaSrc: [
+        //             'img/rizalites.jpg',
+        //             'img/shirt_design.jpg',
+        //             'img/markmanship.jpg'
+        //         ], 
+        //         thumbnailSrc: 'img/bagwis_mockup_1.jpg',
+        //         category: 'Print Design',
+        //         title: 'Ang Lagaslas Vol 12 Issue 1'
+        //     }
+        // ];
+    
         function addPortfolioItem(container, item, index) {
             const card = document.createElement('div');
-
-            // Apply 'col-md-4' class to the first three items
-            // Apply 'col-md-4 anm_mod fast' class to the rest
+    
             card.className = index < 3 ? 'col-md-4' : 'col-md-4 anm_mod fast';
-
+    
             card.innerHTML = `
                 <div class="card mb-3 p-0" style="border:none;">
                     <div class="image-container position-relative">
-                        <img class="folio_image" src="${item.imgSrc}" alt="" style="width: 100%;">
-                        <button class="view-button" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="${item.imgSrc}">
+                        <img class="folio_image" src="${item.thumbnailSrc}" alt="" style="width: 100%;">
+                        <button class="view-button" data-media-type="${item.mediaType}" data-media-src='${JSON.stringify(item.mediaSrc)}'>
                             <i class="bi bi-arrow-up-right"></i>
                         </button>
                     </div>
@@ -555,24 +705,73 @@
                     </div>
                 </div>
             `;
-
+    
             container.appendChild(card);
         }
+    
+        function showModal(mediaType, mediaSrc) {
+            const modalDialog = document.getElementById('modalDialog');
+            const mediaContent = document.getElementById('mediaContent');
+            mediaContent.innerHTML = ''; // Clear any previous content
+    
+            if (mediaType === 'image') {
+                modalDialog.className = 'modal-dialog modal-dialog-centered'; // Normal modal size
+                mediaContent.innerHTML = `<img src="${mediaSrc}" alt="" class="img-fluid" style="border-radius: 10px;">`;
+            } else if (mediaType === 'video') {
+                modalDialog.className = 'modal-dialog modal-dialog-centered modal-lg'; // Larger modal size for videos
+                mediaContent.innerHTML = `
+                    <video src="${mediaSrc}" controls style="width: 100%; height: auto; border-radius: 10px;"></video>
+                `;
+            } else if (mediaType === 'carousel') {
+                modalDialog.className = 'modal-dialog modal-dialog-centered'; // Larger modal size for carousel
+                const carouselItems = mediaSrc.map((src, index) => `
+                    <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                        <img src="${src}" class="d-block w-100" style="border-radius: 10px;">
+                    </div>
+                `).join('');
 
-        // Function to show modal with full image
-        function showModal(imgSrc) {
-            const modalImage = document.getElementById('modalImage');
-            modalImage.src = imgSrc;
+                // Carousel indicators
+                const carouselIndicators = mediaSrc.map((_, index) => `
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="${index}" class="${index === 0 ? 'active' : ''}" aria-current="${index === 0 ? 'true' : ''}" aria-label="Slide ${index + 1}"></button>
+                `).join('');
+
+                mediaContent.innerHTML = `
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            ${carouselIndicators}
+                        </div>
+                        <div class="carousel-inner" style="border-radius: 10px;">
+                            ${carouselItems}
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                `;
+
+            }
         }
-
-        // Event listener to update the modal image source when the view button is clicked
+    
         document.addEventListener('click', function(event) {
-            if (event.target.closest('.view-button')) {
-                const imgSrc = event.target.closest('.view-button').getAttribute('data-img-src');
-                showModal(imgSrc);
+            const viewButton = event.target.closest('.view-button');
+            if (viewButton) {
+                const mediaType = viewButton.getAttribute('data-media-type');
+                const mediaSrc = JSON.parse(viewButton.getAttribute('data-media-src'));
+                
+                if (mediaType === 'link') {
+                    window.open(mediaSrc, '_blank'); // Open link in a new tab
+                } else {
+                    showModal(mediaType, mediaSrc);
+                    $('#mediaModal').modal('show'); // Show the modal
+                }
             }
         });
-
+    
         // Get the portfolio container
         const showAllContainer = document.getElementById('show-all-container');
         const printDesignContainer = document.getElementById('print-design-container');
@@ -616,7 +815,6 @@
         logoItems.forEach((item, index) => {
             addPortfolioItem(logoContainer, item, index);
         });
-
     </script>
 
 </body>
