@@ -26,7 +26,7 @@
     
         <title>JJ Designs</title>
     </head>
-<body style="background-color: #f3f7ff;">
+<body style="background-image: url('img/marble_background.jpg');">
 
     <nav class="navbar shadow-sm sticky-top">
         <div class="logo">
@@ -124,7 +124,7 @@
     <div class="container animation">
         <div class="row" style="padding: 20px 0;">
             <div class="col-12">
-                <div class="bg-white shadow-sm" style="border-radius: 20px;">
+                <div class="bg-white shadow" style="border-radius: 20px;">
 
                     <div class="custom_margin" style=" padding-top: 50px; display: grid; place-items: center;">
 
@@ -157,13 +157,13 @@
                             
                             <div class="tab-panels">
     
-                                <section id="show_all" class="tab-panel">
+                                <section id="show_all" class="tab-panel portfolio-grid">
                                     <div class="container p-0 animation">
                                         <div class="row" id="show-all-container"></div>
                                     </div>
                                 </section>
     
-                                <section id="print_design" class="tab-panel">
+                                <section id="print_design" class="tab-panel portfolio-grid">
                                     <div class="container p-0 animation">
                                         <div class="row" id="print-design-container"></div>
                                     </div>
@@ -607,8 +607,8 @@
         const productDesignItems = [
             {
                 mediaType: 'image',
-                mediaSrc: 'img/dog_shampoo_1.jpg',
-                thumbnailSrc: 'img/dog_shampoo_1.jpg',
+                mediaSrc: 'img/dog_shampoo.jpg',
+                thumbnailSrc: 'img/dog_shampoo.jpg',
                 category: 'Product Design',
                 title: 'Dog Shampoo Lavander Scent'
             },
@@ -703,8 +703,8 @@
         ];
 
         const showAllItems = [].concat(
-            printDesignItems,
             socialMediaItems,
+            printDesignItems,
             uiDesignItems,
             productDesignItems,
             logoItems,
@@ -761,7 +761,7 @@
                         </button>
                     </div>
                     <div class="card-text" style="height: fit-content;">
-                        <p class="pt-2 mb-0 portfolio_card_text">${item.category}</p>
+                        <p class="pt-2 mb-0 portfolio_card_text" style="font-size:small">${item.category}</p>
                         <h6 class="p-0 portfolio_card_text"><b>${item.title}</b></h6>
                     </div>
                 </div>
@@ -769,6 +769,29 @@
     
             container.appendChild(card);
         }
+
+        // function addPortfolioItem(container, item, index) {
+        //     const card = document.createElement('div');
+        //     // card.className = index < 3 ? 'card-container' : 'card-container anm_mod fast';
+        //     card.className = 'card-container anm_mod fast';
+            
+        //     card.innerHTML = `
+        //         <div class="card mb-3 p-0" style="border:none;">
+        //             <div class="image-container position-relative">
+        //                 <img class="folio_image" src="${item.thumbnailSrc}" alt="" style="width: 100%;">
+        //                 <button class="view-button" data-media-type="${item.mediaType}" data-media-src='${JSON.stringify(item.mediaSrc)}'>
+        //                     <i class="bi bi-arrow-up-right"></i>
+        //                 </button>
+        //             </div>
+        //             <div class="card-text" style="height: fit-content;">
+        //                 <p class="pt-2 mb-0 portfolio_card_text">${item.category}</p>
+        //                 <h6 class="p-0 portfolio_card_text"><b>${item.title}</b></h6>
+        //             </div>
+        //         </div>
+        //     `;
+            
+        //     container.appendChild(card);
+        // }
     
         function showModal(mediaType, mediaSrc) {
             const modalDialog = document.getElementById('modalDialog');
