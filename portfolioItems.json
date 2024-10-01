@@ -112,6 +112,29 @@
         {
         "mediaType": "carousel",
         "mediaSrc": [
+            "img/menu_1.jpg"
+        ],
+        "thumbnailSrc": "img/menu_1.jpg",
+        "category": "Social Media",
+        "title": "Caramel Macchiato"
+        },
+        {
+            "mediaType": "image",
+            "mediaSrc": "img/menu_2.gif",
+            "thumbnailSrc": "img/menu_2.gif",
+            "category": "Social Media",
+            "title": "Green Apple Soda"
+        },
+        {
+            "mediaType": "image",
+            "mediaSrc": "img/menu_3.jpg",
+            "thumbnailSrc": "img/menu_3.jpg",
+            "category": "Social Media",
+            "title": "Green Apple Soda"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
             "img/adobe_animate.gif",
             "img/adobe_animate_1.jpg"
         ],
@@ -240,23 +263,8 @@
         "thumbnailSrc": "img/teachers_day.png",
         "category": "Social Media",
         "title": "Teacher's Day"
-        },
-        {
-        "mediaType": "carousel",
-        "mediaSrc": [
-            "img/menu_1.jpg"
-        ],
-        "thumbnailSrc": "img/menu_1.jpg",
-        "category": "Social Media",
-        "title": "Caramel Macchiato"
-        },
-        {
-            "mediaType": "image",
-            "mediaSrc": "img/menu_2.gif",
-            "thumbnailSrc": "img/menu_2.gif",
-            "category": "Social Media",
-            "title": "Green Apple Soda"
         }
+        
     ],
     "uiDesignItems": [
         {
