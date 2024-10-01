@@ -1,0 +1,461 @@
+{
+    "printDesignItems": [
+        {
+        "mediaType": "link",
+        "mediaSrc": "https://drive.google.com/file/d/1Q2KaRZmJt-wJ7ZVFvm5872tnNsR1Lfxv/view?usp=drive_link",
+        "thumbnailSrc": "img/bagwis_mockup_1.jpg",
+        "category": "Print Design",
+        "title": "Bagwis Vol 3 Issue 1"
+        },
+        {
+        "mediaType": "link",
+        "mediaSrc": "https://drive.google.com/file/d/1iImc6QMk80IQ1KWg5VfxxWE2gqV_AYJ3/view?usp=drive_link",
+        "thumbnailSrc": "img/lagaslas_mockup_3.jpg",
+        "category": "Print Design",
+        "title": "Ang Lagaslas Vol 14 Issue 1"
+        },
+        {
+        "mediaType": "link",
+        "mediaSrc": "https://drive.google.com/file/d/1T9lBRjLPfeBy4m8iyyndVYgy55H-H72f/view?usp=drive_link",
+        "thumbnailSrc": "img/289.jpg",
+        "category": "Print Design",
+        "title": "Ang Lagaslas Vol 13 Issue 1"
+        },
+        {
+        "mediaType": "link",
+        "mediaSrc": "https://drive.google.com/file/d/19u-g_EQlRbpgWALgihfjzm0yO4tEzBIA/view?usp=drive_link",
+        "thumbnailSrc": "img/al4.jpg",
+        "category": "Print Design",
+        "title": "Ang Lagaslas Vol 12 Issue 1"
+        },
+        {
+        "mediaType": "link",
+        "mediaSrc": "https://drive.google.com/file/d/1_Ud4Zj2G_LXB0Q_1yvF4dqxyLUbm0-O-/view?usp=drive_link",
+        "thumbnailSrc": "img/al2.jpg",
+        "category": "Print Design",
+        "title": "Ang Lagaslas Vol 11 Issue 1"
+        },
+        {
+        "mediaType": "link",
+        "mediaSrc": "https://drive.google.com/file/d/1t_-ioqs-QKxZCTHQXnWo86Ue1_6LSZe8/view?usp=drive_link",
+        "thumbnailSrc": "img/ang_lagaslas_vo3_issue1.jpg",
+        "category": "Print Design",
+        "title": "Ang Lagaslas Vol 3 Issue 1"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/Nature_of_listening.jpg",
+            "img/Nature_of_listening_1.jpg",
+            "img/Nature_of_listening_2.jpg",
+            "img/Nature_of_listening_3.jpg"
+        ],
+        "thumbnailSrc": "img/Nature_of_listening.jpg",
+        "category": "Print Design",
+        "title": "Nature of Listening"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/Pork_tofu_sisig.jpg",
+            "img/Pork_tofu_sisig_1.jpg",
+            "img/Pork_tofu_sisig_2.jpg",
+            "img/Pork_tofu_sisig_3.jpg"
+        ],
+        "thumbnailSrc": "img/Pork_tofu_sisig.jpg",
+        "category": "Print Design",
+        "title": "Pork Tofu Sisig"
+        },
+        {
+        "mediaType": "link",
+        "mediaSrc": "https://drive.google.com/file/d/1nSPLhcdRPGcBSDe0dlQwYbUY8Ru6gn4n/view?usp=sharing",
+        "thumbnailSrc": "img/dozeeye_manual_mockup.jpg",
+        "category": "Print Design",
+        "title": "DozeEye Manual"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/excel_id.jpg",
+            "img/excel_id_1.jpg"
+        ],
+        "thumbnailSrc": "img/excel_id.jpg",
+        "category": "Print Design",
+        "title": "EXCEL ID Design"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/card_design.jpg",
+            "img/card_design_1.jpg"
+        ],
+        "thumbnailSrc": "img/card_design.jpg",
+        "category": "Print Design",
+        "title": "Card Design"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/anchors_mobile_cafe_menu.jpg",
+        "thumbnailSrc": "img/anchors_mobile_cafe_menu.jpg",
+        "category": "Print Design",
+        "title": "Anchors Mobile Cafe Menu"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/Anchors_mobile_menu_redesign.jpg",
+        "thumbnailSrc": "img/Anchors_mobile_menu_redesign.jpg",
+        "category": "Print Design",
+        "title": "Anchors Mobile Cafe Menu Redesign"
+        }
+    ],
+    "socialMediaItems": [
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/adobe_animate.gif",
+            "img/adobe_animate_1.jpg"
+        ],
+        "thumbnailSrc": "img/adobe_animate.gif",
+        "category": "Social Media",
+        "title": "Adobe Animate"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/excel_odyssey.gif",
+            "img/excel_odyssey_2.jpg",
+            "img/excel_odyssey_1.jpg",
+            "img/excel_odyssey_3.jpg",
+            "img/excel_odyssey_4.jpg",
+            "img/excel_odyssey_5.jpg",
+            "img/excel_odyssey_6.jpg"
+        ],
+        "thumbnailSrc": "img/excel_odyssey.gif",
+        "category": "Social Media",
+        "title": "Excel Odyssey"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/ranking.gif",
+            "img/ranking_1.jpg",
+            "img/ranking_2.jpg",
+            "img/ranking_3.jpg",
+            "img/ranking_4.jpg",
+            "img/ranking_5.jpg",
+            "img/ranking_6.jpg",
+            "img/ranking_8.jpg",
+            "img/ranking_7.jpg"
+        ],
+        "thumbnailSrc": "img/ranking.gif",
+        "category": "Social Media",
+        "title": "Excel Ranking"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/flag_raising-min.jpg",
+            "img/flag_raising.jpg",
+            "img/flag_raising_1.jpg",
+            "img/flag_raising_2.jpg",
+            "img/flag_raising_3.jpg",
+            "img/flag_raising_4.jpg",
+            "img/flag_raising_5.jpg"
+        ],
+        "thumbnailSrc": "img/flag_raising-min.jpg",
+        "category": "Social Media",
+        "title": "Excel Flag Raising"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/ai_series_2.jpg",
+            "img/ai_series_1.jpg",
+            "img/ai_series_3.jpg"
+        ],
+        "thumbnailSrc": "img/ai_series_2.jpg",
+        "category": "Social Media",
+        "title": "Excel AI Series"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/csl_1.jpg",
+            "img/csl_2.jpg",
+            "img/csl_3.jpg",
+            "img/csl_4.jpg"
+        ],
+        "thumbnailSrc": "img/csl_1.jpg",
+        "category": "Social Media",
+        "title": "CSL Deliberation"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/Tree_Planting.gif",
+            "img/Tree_Planting_1.jpg",
+            "img/Tree_Planting_2.jpg",
+            "img/Tree_Planting_3.jpg"
+        ],
+        "thumbnailSrc": "img/Tree_Planting.gif",
+        "category": "Social Media",
+        "title": "CCC Tree Planting"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/Mothers_day.gif",
+        "thumbnailSrc": "img/Mothers_day.gif",
+        "category": "Social Media",
+        "title": "Mother's Day Greeting"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/ml_roster.gif",
+        "thumbnailSrc": "img/ml_roster.gif",
+        "category": "Social Media",
+        "title": "ML Tournament Roster"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/got_love_struck.gif",
+            "img/valentines_1.jpg",
+            "img/valentines_2.jpg",
+            "img/valentines_3.jpg"
+        ],
+        "thumbnailSrc": "img/got_love_struck.gif",
+        "category": "Social Media",
+        "title": "Got Love Struck"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/need_business_design.jpg",
+        "thumbnailSrc": "img/need_business_design.jpg",
+        "category": "Social Media",
+        "title": "Need A Business Design"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/teachers_day.png",
+        "thumbnailSrc": "img/teachers_day.png",
+        "category": "Social Media",
+        "title": "Teacher's Day"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/menu_1.jpg"
+        ],
+        "thumbnailSrc": "img/menu_1.jpg",
+        "category": "Social Media",
+        "title": "Caramel Macchiato"
+        },
+        {
+            "mediaType": "image",
+            "mediaSrc": "img/menu_2.gif",
+            "thumbnailSrc": "img/menu_2.gif",
+            "category": "Social Media",
+            "title": "Green Apple Soda"
+        }
+    ],
+    "uiDesignItems": [
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/dozeeye_mobile.jpg",
+        "thumbnailSrc": "img/dozeeye_mobile.jpg",
+        "category": "UI Design",
+        "title": "DozeEye Mobile App"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/emonitoring.jpg",
+        "thumbnailSrc": "img/emonitoring.jpg",
+        "category": "UI Design",
+        "title": "E Monitoring System"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/dci_connect.jpg",
+        "thumbnailSrc": "img/dci_connect.jpg",
+        "category": "UI Design",
+        "title": "DCI Connect"
+        }
+    ],
+    "illustrationItems": [
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/portrait 01.jpg",
+        "thumbnailSrc": "img/portrait 01.jpg",
+        "category": "Illustration",
+        "title": "Portrait 01"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/portrait 02.jpg",
+        "thumbnailSrc": "img/portrait 02.jpg",
+        "category": "Illustration",
+        "title": "Portrait 02"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/portrait 03.jpg",
+        "thumbnailSrc": "img/portrait 03.jpg",
+        "category": "Illustration",
+        "title": "Portrait 03"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/portrait 04.jpg",
+        "thumbnailSrc": "img/portrait 04.jpg",
+        "category": "Illustration",
+        "title": "Portrait 04"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/portrait 05.jpg",
+        "thumbnailSrc": "img/portrait 05.jpg",
+        "category": "Illustration",
+        "title": "Portrait 05"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/portrait 06.jpg",
+        "thumbnailSrc": "img/portrait 06.jpg",
+        "category": "Illustration",
+        "title": "Portrait 06"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/portrait 07.jpg",
+        "thumbnailSrc": "img/portrait 07.jpg",
+        "category": "Illustration",
+        "title": "Portrait 07"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/portrait 08.jpg",
+        "thumbnailSrc": "img/portrait 08.jpg",
+        "category": "Illustration",
+        "title": "Portrait 08"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/portrait 09.jpg",
+        "thumbnailSrc": "img/portrait 09.jpg",
+        "category": "Illustration",
+        "title": "Portrait 09"
+        }
+    ],
+    "productDesignItems": [
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/dog_shampoo.jpg",
+        "thumbnailSrc": "img/dog_shampoo.jpg",
+        "category": "Product Design",
+        "title": "Dog Shampoo Lavander Scent"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/dog_shampoo_2.jpg",
+        "thumbnailSrc": "img/dog_shampoo_2.jpg",
+        "category": "Product Design",
+        "title": "Dog Shampoo Vanilla Scent"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/dog_shampoo_3.jpg",
+        "thumbnailSrc": "img/dog_shampoo_3.jpg",
+        "category": "Product Design",
+        "title": "Dog Shampoo Raspberry Scent"
+        },
+        {
+            "mediaType": "carousel",
+            "mediaSrc": [
+                "img/anchors_shirt.jpg",
+                "img/anchors_shirt_3.jpg",
+                "img/anchors_shirt_1.jpg",
+                "img/anchors_shirt_2.jpg",
+                "img/anchors_shirt_4.jpg",
+                "img/anchors_shirt_5.jpg",
+                "img/anchors_shirt_6.jpg"
+            ],
+            "thumbnailSrc": "img/anchors_shirt.jpg",
+            "category": "Product Design",
+            "title": "Anchors Mobile Cafe Tshirt"
+            },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/markmanship.jpg",
+            "img/markmanship_1.jpg",
+            "img/markmanship_2.jpg"
+        ],
+        "thumbnailSrc": "img/markmanship.jpg",
+        "category": "Product Design",
+        "title": "Markmanship Shirt Design"
+        },
+        {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/rizalites.jpg",
+            "img/rizalites_1.jpg",
+            "img/rizalites_2.jpg"
+        ],
+        "thumbnailSrc": "img/rizalites.jpg",
+        "category": "Product Design",
+        "title": "Rizalites Polo Shirt Design"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/shirt_design.jpg",
+        "thumbnailSrc": "img/shirt_design.jpg",
+        "category": "Product Design",
+        "title": "Jaiga Shirt Design"
+        }
+    ],
+    "logoItems": [
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/anchors_1.jpg",
+        "thumbnailSrc": "img/anchors_1.jpg",
+        "category": "Logo",
+        "title": "Tipsy Anchors Mobile Bar"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/anchors_2.jpg",
+        "thumbnailSrc": "img/anchors_2.jpg",
+        "category": "Logo",
+        "title": "Tipsy Anchors Foodtrip"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/anchors_3.jpg",
+        "thumbnailSrc": "img/anchors_3.jpg",
+        "category": "Logo",
+        "title": "Tipsy Anchors Beer & Liquor"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/jj_designs.jpg",
+        "thumbnailSrc": "img/jj_designs.jpg",
+        "category": "Logo",
+        "title": "JJ Designs"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/DOZEEYE.jpg",
+        "thumbnailSrc": "img/DOZEEYE.jpg",
+        "category": "Logo",
+        "title": "DozeEye"
+        },
+        {
+        "mediaType": "image",
+        "mediaSrc": "img/KAPETEROS.jpg",
+        "thumbnailSrc": "img/KAPETEROS.jpg",
+        "category": "Logo",
+        "title": "Kapeteros"
+        }
+    ]
+}
+  
