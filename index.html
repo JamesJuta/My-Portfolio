@@ -176,16 +176,13 @@
                             <h3 class="title hero-subtitle text-center">
                                 Where creativity meets precision, transforming visions into masterpieces
                             </h3>
-                            <div class="pt-3 mb-3">
-                                <a class="btn btn-sm" style="width: 150px;" href="lets_talk.html">Let's talk <i class="bi bi-arrow-right"></i></a>
+                            <div class="d-flex pt-3 mb-3" style="gap: 10px;">
+                                <div id='div'>
+                                    <button class="btn btn-sm" style="width: 150px;" id="download">Download CV  <i class="bi bi-download"></i></button>
+                                </div>
+                                <!-- <a class="btn btn-sm" style="width: 150px;" href="lets_talk.html">Let's talk <i class="bi bi-arrow-right"></i></a> -->
                                 <a class="btn btn-sm" style="width: 150px;" href="portfolio.html">View Portfolio</a>
-                                <!-- <a class="btn btn-sm" style="width: 150px;" href="img/Resume.pdf" download="Resume.pdf">
-                                    
-                                        Resume <i class="bi bi-download"></i>
-                                   
-                                </a> -->
-                                
-
+                               
                             </div>
     
                             <div class="social-icons mb-3">
@@ -325,11 +322,13 @@
                                     <h2 class="title">Explore My <span class="text_primary">Latest Works</span></h2>
                                     <h6>"Showcasing a Collection of My Most Recent and Innovative Design Projects."</h6>
                                     <p class="text-muted">Explore my latest creations that highlight my expertise in graphic design, including innovative UI design, captivating social media graphics, and eye catching print materials and other types of digital assets. Each project showcases my ability to blend creativity with strategic design principles to deliver impactful visual solutions</p>
-                                    <!-- <button type="button" class="view_folio_btn btn btn-sm">View Portfolio</button> -->
                                     <a class="view_folio_btn btn btn-sm" href="portfolio.html">View Portfolio</a>
                                 </div>
+
+                                <!-- <div id="carousel-placeholder"></div> -->
+
         
-                                <div id="carouselExampleCaptions" class="carousel slide p-2 anm_mod fast" style="width: 100%; max-width: 600px; height: 450px;">
+                                <div id="carouselExampleCaptions" class="carousel slide carousel-fade p-2 anm_mod fast" style="width: 100%; max-width: 600px; height: 450px;">
                                     <div class="carousel-indicators">
                                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -562,10 +561,96 @@
         </div>
     </div>
 
+    <script>
+        function download() {
+            // Create a download link to the attached resume PDF
+            // https://drive.google.com/file/d/1zNTPokWdeBUrgGDeKlZLcQDPVMi9ZDL4/view?usp=drive_link
+
+            let resumeUrl = 'https://drive.google.com/uc?export=download&id=1zNTPokWdeBUrgGDeKlZLcQDPVMi9ZDL4'; // Replace this with the actual file path
+            let a = document.createElement('a');
+            
+            // Set the URL of the file and the download attribute
+            a.setAttribute('href', resumeUrl);
+            a.setAttribute('download', 'resume.pdf'); // Set the download file name
+            
+            // Append the link to the div, click it, and remove it after the download
+            document.getElementById('div').appendChild(a);
+            a.click();
+            document.getElementById('div').removeChild(a);
+        }
+
+        // Attach the event listener to the download button
+        document.getElementById('download').addEventListener('click', download);
+
+    </script>
+
 
     <!-- JS code -->
     <script defer src="js/script.js"></script>
     <script src="js/footer.js"></script>
+
+    <!-- <script>
+        function createCarousel(images) {
+        let indicators = '';
+        let slides = '';
+
+        // Loop through images and create indicators and slides
+        images.forEach((image, index) => {
+            const isActive = index === 0 ? 'active' : ''; // First item is active by default
+
+            // Carousel indicators
+            indicators += `
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="${index}" class="${isActive}" aria-current="true" aria-label="Slide ${index + 1}"></button>
+            `;
+
+            // Carousel items
+            slides += `
+                <div class="carousel-item ${isActive} carousel-fit">
+                    <img src="${image.src}" class="d-block w-100 h-100" alt="${image.alt}" style="object-fit: cover;">
+                </div>
+            `;
+        });
+
+        // Complete carousel HTML structure
+        const carouselHTML = `
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade p-2 anm_mod fast" style="width: 100%; max-width: 600px; height: 450px;">
+                <div class="carousel-indicators">
+                    ${indicators}
+                </div>
+                <div class="carousel-inner" style="border-radius: 10px; width: 100%; height: 100%;">
+                    ${slides}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        `;
+
+        // Insert the carousel into the placeholder
+        document.getElementById('carousel-placeholder').innerHTML = carouselHTML;
+    }
+
+    // Example usage: pass image objects with src and alt text
+    const images = [
+        { src: 'img/social_media.jpg', alt: 'Social Media Design' },
+        { src: 'img/illustration_cover.jpg', alt: 'Illustration Cover' },
+        { src: 'img/bagwis_mockup_1.jpg', alt: 'Bagwis Mockup' },
+        { src: 'img/dozeeye_manual_mockup.jpg', alt: 'Dozeeye Manual Mockup' },
+        { src: 'img/dozeeye_mobile.jpg', alt: 'Dozeeye Mobile' },
+        { src: 'img/lagaslas_mockup_3.jpg', alt: 'Lagaslas Mockup' }
+    ];
+
+    // Call the function on page load
+    window.onload = function() {
+        createCarousel(images);
+    };
+
+    </script> -->
 
 </body>
 </html>
