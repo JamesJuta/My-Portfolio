@@ -1,6 +1,17 @@
 {
     "printDesignItems": [
         {
+        "mediaType": "carousel",
+        "mediaSrc": [
+            "img/al_vol_15.jpg",
+            "img/al_vol_15_1.jpg",
+            "img/al_vol_15_2.jpg"
+        ],
+        "thumbnailSrc": "img/al_vol_15.jpg",
+        "category": "Print Design",
+        "title": "Ang Lagaslas Vol 15 Issue 1"
+        },
+        {
         "mediaType": "link",
         "mediaSrc": "https://drive.google.com/file/d/1Q2KaRZmJt-wJ7ZVFvm5872tnNsR1Lfxv/view?usp=drive_link",
         "thumbnailSrc": "img/bagwis_mockup_1.jpg",
