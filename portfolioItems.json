@@ -1,6 +1,13 @@
 {
     "printDesignItems": [
         {
+        "mediaType": "link",
+        "mediaSrc": "https://drive.google.com/file/d/1-f0_y_IZdm_oXwuyBeQ3lsZMiw3HHwZm/view?usp=sharing",
+        "thumbnailSrc": "img/lapluma_2.jpg",
+        "category": "Print Design",
+        "title": "La Pluma 2024"
+        },
+        {
         "mediaType": "carousel",
         "mediaSrc": [
             "img/al_vol_15.jpg",
